@@ -1,3 +1,4 @@
+// Nuppule vajutades see kuvab vastava sisu
 var col = document.getElementsByClassName("btn");
 var i;
 
