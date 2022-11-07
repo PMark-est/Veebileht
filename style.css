@@ -3,17 +3,17 @@
   margin: 0;
 }
 body {
-  background-color: #5f5b6b;
+  background-color: #000;
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
 }
 .navbar {
   display: inline-block;
-  background-color: #5f5b6b;
-  padding-left: 5rem;
+  background-color: #aaa;
+  padding-left: 3rem;
   width: 18%;
   height: 100%;
-  border-right: 1px solid #000;
 }
 .navbar h1 {
   font-size: 4vw;
@@ -22,15 +22,45 @@ body {
   text-align: center;
   color: #fff;
 }
-.navbar h1::first-letter {
-  color: #0f0;
+.navB {
+  position: relative;
+  text-align: center;
+  margin: 0.4rem 0 0.4rem 2rem;
+  padding-bottom: 3rem;
+  transition: 0.5s;
 }
-.sisu {
-  float: right;
-  background-color: #323031;
-  width: 70%;
-  margin: 5% 5% 0 0;
-  padding: 0 0 22% 0;
-  border: 1rem solid #323031;
-  border-radius: 1vw;
+.navB:hover {
+  transform: translateX(10%);
+}
+.navbar div {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+.navB:hover + div {
+  visibility: visible;
+  color: #fff;
+  opacity: 1;
+  height: auto;
+  margin: 0.25rem 0 0.25rem 0;
+  /*transform: translateX(20%);
+  transition: 1s;
+  transition-timing-function: ease-in-out;
+  */
+  animation: fadeIn 0.7s ease;
+}
+.navSubB {
+  display: block;
+  margin: 0 0 0 5rem;
+}
+/*https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
