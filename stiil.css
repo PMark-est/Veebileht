@@ -1,0 +1,52 @@
+body {background-color: rgb(41, 171, 207);}
+h1 {color: rgb(254, 255, 253);font-family: Sans MS, cursive, sans-serif;text-align: center; font-size: 60 ;}
+
+.kast {
+    margin: auto;
+    width: 1320px;
+    font-family: Sans MS, cursive, sans-serif;
+    border-width:1px;
+    border-style:solid;
+    border-color:#000000;
+    border-width: thin;
+    font-size: 25px;
+}
+.def {
+    color: rgb(148, 172, 100);
+    font-size: large;
+}
+.valem {
+    text-align: center;
+}
+div {
+    display: "none";
+}
+.nupud {
+    
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 0.2%;
+
+}
+.btn {
+    cursor: pointer;
+    background-color: rgb(89, 107, 112);
+    width: 1325px;
+    display: block;
+    height: 70px;
+    font-size: 20px; 
+    font-family: Comic Sans MS, cursive, sans-serif;
+    
+  }
+  .tagasinupp{
+    position:relative;
+    left:1270px;
+    top:-90px;
+    size:small;
+
+    }
+.pilt{
+    width: 50px;
+    height: 50px;
+}   

@@ -1,79 +1,26 @@
-* {
-  padding: 0;
-  margin: 0;
+body{
+    background-color: #ababab;
 }
-body {
-  background-color: #778da9;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+button{
+    background-color: #323232;
+    color: #efefef;
+    padding: 1rem;
+    width:  100%;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
-button {
-  background-color: #415a77;
-  color: #efefef;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 100%;
-  font-size: 1.5rem;
-  padding: 1vw 0 1vh 0;
+.active, button:hover{
+    background-color: #212121;
+    color: #efefef;
 }
-.navTeema {
-  transition: 0.1s;
-}
-.navAlaTeema {
-  padding: 0.25rem;
-  margin-top: 0.5rem;
-}
-.navbar {
-  background-color: #153155;
-  padding-left: 3rem;
-  width: 100%;
-  height: 10%;
-}
-.navbar h1 {
-  display: inline-block;
-  font-size: 4vw;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: 3px 3px #000;
-  color: #fff;
-}
-.navDB {
-  display: inline-block;
-  margin-left: 10%;
-}
-.navB {
-  display: inline-grid;
-}
-.navB div {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-}
-.navB:hover div {
-  visibility: visible;
-  height: auto;
-  opacity: 1;
-  width: 85%;
-  transform: translate3d(10%, 10%, 0);
-  animation: fadeIn 1s ease;
-}
-.navB:hover .navTeema {
-  border: #99bfea solid 3px;
-  border-radius: 3px;
-}
-.navAlaTeema:hover {
-  background-color: #203853;
-  border-radius: 3px;
-}
-/*
-https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property
-*/
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translate3d(10%, 0, 0);
-  }
-  to {
-    opacity: 1;
-    transform: translate3d(10%, 10%, 0);
-  }
+.vektorid{
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    display: none;
+    overflow: hidden;
+    background-color: #333;
+    color: #efefef;
 }
