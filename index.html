@@ -6,56 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="index.css" />
+    <!--<link rel="stylesheet" href="index.css" />-->
   </head>
   <body>
+    <!--Lisada mediaquery, selleks, kui ekraan liiga väikesks läheb 950x580-->
     <div class="navbar">
       <h1>MafHelp</h1>
-      <button class="navB"></button>
-      <div>
-        <button class="navSubB"></button>
-        <button class="navSubB"></button>
-      </div>
-      <button class="navB"></button>
-      <div>
-        <button class="navSubB"></button>
-        <button class="navSubB"></button>
-      </div>
-      <button class="navB"></button>
-      <div>
-        <button class="navSubB"></button>
-        <button class="navSubB"></button>
-      </div>
-    </div>
-    <div class="sisu">
-      <button type="button" class="btn">Vektorid ja tasand</button>
-      <div class="vektorid">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-          delectus.
-        </p>
-      </div>
-      <button type="button" class="btn">Funktsioonid ja diferentsiaal</button>
-      <div class="vektorid">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio,
-          maxime.
-        </p>
-      </div>
-      <button type="button" class="btn">Maatriksid</button>
-      <div class="vektorid">
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio,
-          maxime.
-        </p>
+      <div class="navDB">
+        <div class="navB">
+          <button class="navTeema">Vektorid & tasandid</button>
+          <div>
+            <button class="navAlaTeema">Eksamiteemad</button>
+            <button class="navAlaTeema">Näidisülesanded</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Funktsioonid</button>
+          <div>
+            <button class="navAlaTeema">Eksamiteemad</button>
+            <button class="navAlaTeema">Näidisülesanded</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Maatriksid</button>
+          <div>
+            <button class="navAlaTeema">Eksamiteemad</button>
+            <button class="navAlaTeema">Näidisülesanded</button>
+          </div>
+        </div>
       </div>
     </div>
   </body>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script
-    id="MathJax-script"
-    async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
-  ></script>
-  <script src="index.js"></script>
 </html>

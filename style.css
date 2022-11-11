@@ -3,64 +3,77 @@
   margin: 0;
 }
 body {
-  background-color: #000;
+  background-color: #778da9;
   overflow: hidden;
   height: 100vh;
   width: 100vw;
 }
+button {
+  background-color: #415a77;
+  color: #efefef;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1vw 0 1vh 0;
+}
+.navTeema {
+  transition: 0.1s;
+}
+.navAlaTeema {
+  padding: 0.25rem;
+  margin-top: 0.5rem;
+}
 .navbar {
-  display: inline-block;
-  background-color: #aaa;
+  background-color: #153155;
   padding-left: 3rem;
-  width: 18%;
-  height: 100%;
+  width: 100%;
+  height: 10%;
 }
 .navbar h1 {
+  display: inline-block;
   font-size: 4vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-bottom: 3rem;
-  text-align: center;
+  text-shadow: 3px 3px #000;
   color: #fff;
 }
+.navDB {
+  display: inline-block;
+  margin-left: 10%;
+}
 .navB {
-  position: relative;
-  text-align: center;
-  margin: 0.4rem 0 0.4rem 2rem;
-  padding-bottom: 3rem;
-  transition: 0.5s;
+  display: inline-grid;
 }
-.navB:hover {
-  transform: translateX(10%);
-}
-.navbar div {
+.navB div {
   opacity: 0;
   height: 0;
   overflow: hidden;
 }
-.navB:hover + div {
+.navB:hover div {
   visibility: visible;
-  color: #fff;
-  opacity: 1;
   height: auto;
-  margin: 0.25rem 0 0.25rem 0;
-  /*transform: translateX(20%);
-  transition: 1s;
-  transition-timing-function: ease-in-out;
-  */
-  animation: fadeIn 0.7s ease;
+  opacity: 1;
+  width: 85%;
+  transform: translate3d(10%, 10%, 0);
+  animation: fadeIn 1s ease;
 }
-.navSubB {
-  display: block;
-  margin: 0 0 0 5rem;
+.navB:hover .navTeema {
+  border: #99bfea solid 3px;
+  border-radius: 3px;
 }
-/*https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property*/
+.navAlaTeema:hover {
+  background-color: #203853;
+  border-radius: 3px;
+}
+/*
+https://stackoverflow.com/questions/3331353/transitions-on-the-css-display-property
+*/
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translate3d(0, -20%, 0);
+    transform: translate3d(10%, 0, 0);
   }
   to {
     opacity: 1;
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(10%, 10%, 0);
   }
 }
