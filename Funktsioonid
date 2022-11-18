@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stiil.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <title>
+        Funktsioonid
+    </title>
+  </head>
+ <body>
+    <div class="nupud">
+      <button class="btn" onclick="toggle()">funktsioonide põhimõiste</button>
+      <div id="div1">
+          <p class="kast">
+            Olgu antud hulk X ⊂ R. Kui igale arvule x ∈ X on vastavusse seatud üks ja ainult üks reaalarv y, siis
+            öeldakse, et hulgal X on defineeritud funktsioon f, mida märgitakse y = f(x). 
+          </p>
+          <p class="kast">
+            Kui suurus y on võrdeline (proportsionaalne) suurusega f(x), siis seda sõltuvust iseloomustab funktsioon y = kf(x), kus k on mingi konstant (võrdetegur).           
+          </p>
+      </div>
+    </div>
+ </body>
