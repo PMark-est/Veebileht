@@ -2,7 +2,12 @@
 
 <html>
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="stiil.css">
+    <link rel="stylesheet" href="style.css" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css" integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js" integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js" integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF" crossorigin="anonymous"
@@ -12,9 +17,41 @@
     </title>
   </head>
   <body>
-    <h1>
-      Vektorid ja Tasandid Ruumis definitsioonid
-    </h1>
+    <div class="navbar">
+      <h1>MafHelp</h1>
+      <div class="navDB">
+        <div class="navB">
+          <button class="navTeema">Vektorid & tasandid</button>
+          <div>
+            <button class="navAlaTeema">Eksamiteemad</button>
+            <button class="navAlaTeema">Näidisülesanded</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Kompleksarvud</button>
+          <div>
+            <button class="navAlaTeema">Eksamiteemad</button>
+            <button class="navAlaTeema">Näidisülesanded</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Funktsioonid</button>
+          <div>
+            <button class="navAlaTeema">Eksamiteemad</button>
+            <button class="navAlaTeema">Näidisülesanded</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Maatriksid</button>
+          <div>
+            <button class="navAlaTeema">Eksamiteemad</button>
+            <button class="navAlaTeema">Näidisülesanded</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
     <div class="nupud">
         <button class="btn" onclick="toggle()">Suunatud lõikude hulk</button>
         <div id="div1">
@@ -172,7 +209,7 @@
             </p>
         </div>
   </div>
-  <a class="tagasinupp" href="Kompleks.html" role="button"> <img class= "pilt" src="Allalaaditud fail.jpg" /></a>
+  
   <script src="script.js"></script>     
   </body>
 </html>
