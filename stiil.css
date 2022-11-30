@@ -1,39 +1,32 @@
-.kast {
-   
-    margin: auto;
-    width: 1320px;
-    font-family: Sans MS, cursive, sans-serif;
-    border-width:1px;
-    border-style:solid;
-    border-color:#000000;
-    border-width: thin;
-    font-size: 25px;
+.sisuNupud{
+    display: grid;
+    float: left;
+
 }
-.def {
-    color: rgb(148, 172, 100);
+body{
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+}
+.sisuTekst{
+    font-size: large;
+    margin-left: 350px;
+    margin-right: 50px;
+    margin-top: 75px;
+    text-align:center
+
+}
+.tekst_naita{
+    display: inline;
+    font-size: 25px;
+
+
+}
+.tekst_peida{
+    display: none;
     font-size: large;
 }
-.valem {
-    text-align: center;
+img{
+    width: 50%;
+    height: 100%;
 }
-div {
-    display: "none";
-}
-.nupud {
-    
-    margin: 0;
-    position: absolute;
-    top: 30%;
-    left: 0.2%;
-
-}
-.btn {
-    cursor: pointer;
-    background-color: #415a77;
-    width: 1325px;
-    display: block;
-    height: 70px;
-    font-size: 20px; 
-    font-family: Comic Sans MS, cursive, sans-serif;
-}
-
