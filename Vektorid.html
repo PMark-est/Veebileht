@@ -2,8 +2,8 @@
 
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="stiil.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
@@ -22,7 +22,7 @@
       crossorigin="anonymous"
       onload="renderMathInElement(document.body);"
     ></script>
-    <title>Vektorid </title>
+    <title>Vektorid</title>
   </head>
   <body>
     <div class="navbar">
@@ -31,17 +31,29 @@
         <div class="navB">
           <button class="navTeema">Vektorid & tasandid</button>
           <div>
-            <button class="navAlaTeema">Vektorid ruumis</button>
-            <button class="navAlaTeema">Sirge & tasand ruumis</button>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Vektorid.html'"
+            >
+              Vektorid ruumis
+            </button>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Tasandid.html'"
+            >
+              Sirge & tasand ruumis
+            </button>
           </div>
         </div>
         <div class="navB">
           <button class="navTeema">Kompleksarvud</button>
           <div>
-            <button class="navAlaTeema">
-              Trigonomeetriline- & Algebralinekuju
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Kompleks.html'"
+            >
+              Trigonomeetriline- & Algebraline & Eksponentkuju
             </button>
-            <button class="navAlaTeema">Eksponentkuju</button>
           </div>
         </div>
         <div class="navB">
@@ -67,146 +79,191 @@
         <div class="navB">
           <button class="navTeema">Maatriksid</button>
           <div>
-            <button class="navAlaTeema">Maatriksid & Determinandid</button>
-            <button class="navAlaTeema">
-              Pöördmaatriks & lineaar-võrrandisüsteem
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Maatriksid.html'"
+            >
+              Maatriksid & Determinandid
             </button>
           </div>
         </div>
       </div>
     </div>
     <div class="sisuNupud">
-      <button type="button" class="btn" id="1" onclick="reply_click(this.id)">Suunatud lõik</button>
-      <button type="button" class="btn" id="2" onclick="reply_click(this.id)">Seotud vektor</button>
-      <button type="button" class="btn" id="3" onclick="reply_click(this.id)">Seotud vektori pikkus</button>
-      <button type="button" class="btn" id="4" onclick="reply_click(this.id)">Kollineaarsed seotud vektorid</button>
-      <button type="button" class="btn" id="5" onclick="reply_click(this.id)">vastassuunalised seotud vektorid</button>
-      <button type="button" class="btn" id="6" onclick="reply_click(this.id)">Ekvivalentne soetud vektor</button>
-      <button type="button" class="btn" id="7" onclick="reply_click(this.id)">Ekvivalentselt seotud vektorite hulk</button>
-      <button type="button" class="btn" id="8" onclick="reply_click(this.id)">Vabavektorid</button>
-      <button type="button" class="btn" id="9" onclick="reply_click(this.id)">Vastandvektor</button>
-      <button type="button" class="btn" id="10" onclick="reply_click(this.id)">Kollineaarsed vabvektorid</button>
-      <button type="button" class="btn" id="11" onclick="reply_click(this.id)">Samasuunalised vabavektorid</button>
-      <button type="button" class="btn" id="12" onclick="reply_click(this.id)">Punkti projektsioon</button>
-      <button type="button" class="btn" id="13" onclick="reply_click(this.id)">Projektsiooni vektor</button>
-      <button type="button" class="btn" id="14" onclick="reply_click(this.id)">Kohavekktor</button>
-      <button type="button" class="btn" id="15" onclick="reply_click(this.id)">Eukleidiline vektorruum</button>
-      <button type="button" class="btn" id="16" onclick="reply_click(this.id)">Vektorruumi loomuk baas</button>
-      <button type="button" class="btn" id="17" onclick="reply_click(this.id)">Vektori pikkus</button>
-      <button type="button" class="btn" id="18" onclick="reply_click(this.id)">Vektorite vaheline nurk</button>
-      <button type="button" class="btn" id="19" onclick="reply_click(this.id)">Skalaarkorrutis</button>
-      <button type="button" class="btn" id="20" onclick="reply_click(this.id)">Sega korrutis</button>
-      <button type="button" class="btn" id="22" onclick="reply_click(this.id)">Tetraeedri ruumala</button>
-      <button type="button" class="btn" id="21" onclick="reply_click(this.id)">Rööptahuka ruumala</button>
-
+      <button type="button" class="btn" id="1" onclick="reply_click(this.id)">
+        Suunatud lõik
+      </button>
+      <button type="button" class="btn" id="2" onclick="reply_click(this.id)">
+        Seotud vektor
+      </button>
+      <button type="button" class="btn" id="3" onclick="reply_click(this.id)">
+        Seotud vektori pikkus
+      </button>
+      <button type="button" class="btn" id="4" onclick="reply_click(this.id)">
+        Kollineaarsed seotud vektorid
+      </button>
+      <button type="button" class="btn" id="5" onclick="reply_click(this.id)">
+        vastassuunalised seotud vektorid
+      </button>
+      <button type="button" class="btn" id="6" onclick="reply_click(this.id)">
+        Ekvivalentne soetud vektor
+      </button>
+      <button type="button" class="btn" id="7" onclick="reply_click(this.id)">
+        Ekvivalentselt seotud vektorite hulk
+      </button>
+      <button type="button" class="btn" id="8" onclick="reply_click(this.id)">
+        Vabavektorid
+      </button>
+      <button type="button" class="btn" id="9" onclick="reply_click(this.id)">
+        Vastandvektor
+      </button>
+      <button type="button" class="btn" id="10" onclick="reply_click(this.id)">
+        Kollineaarsed vabvektorid
+      </button>
+      <button type="button" class="btn" id="11" onclick="reply_click(this.id)">
+        Samasuunalised vabavektorid
+      </button>
+      <button type="button" class="btn" id="12" onclick="reply_click(this.id)">
+        Punkti projektsioon
+      </button>
+      <button type="button" class="btn" id="13" onclick="reply_click(this.id)">
+        Projektsiooni vektor
+      </button>
+      <button type="button" class="btn" id="14" onclick="reply_click(this.id)">
+        Kohavekktor
+      </button>
+      <button type="button" class="btn" id="15" onclick="reply_click(this.id)">
+        Eukleidiline vektorruum
+      </button>
+      <button type="button" class="btn" id="16" onclick="reply_click(this.id)">
+        Vektorruumi loomuk baas
+      </button>
+      <button type="button" class="btn" id="17" onclick="reply_click(this.id)">
+        Vektori pikkus
+      </button>
+      <button type="button" class="btn" id="18" onclick="reply_click(this.id)">
+        Vektorite vaheline nurk
+      </button>
+      <button type="button" class="btn" id="19" onclick="reply_click(this.id)">
+        Skalaarkorrutis
+      </button>
+      <button type="button" class="btn" id="20" onclick="reply_click(this.id)">
+        Sega korrutis
+      </button>
+      <button type="button" class="btn" id="22" onclick="reply_click(this.id)">
+        Tetraeedri ruumala
+      </button>
+      <button type="button" class="btn" id="21" onclick="reply_click(this.id)">
+        Rööptahuka ruumala
+      </button>
     </div>
     <div class="sisuTekst">
-    
-      <div name="tekst" class="tekst_peida" id="1">
+      <div class="tekst" id="1">
         Lõiku, millel on fikseeritud alguspunkt, s.t suund, nimetatakse
         \(\bold{suunatud}\) \(\bold{lõiguks}\) ehk \(\bold{seotud}\)
-        \(\bold{vektoriks}\). Seotud vektorit alguspunktiga X ja lõpp-punktiga
-        Y tähistatakse edaspidi \(\overline{XY}\).
+        \(\bold{vektoriks}\). Seotud vektorit alguspunktiga X ja lõpp-punktiga Y
+        tähistatakse edaspidi \(\overline{XY}\).
       </div>
-      <div name="tekst" class="tekst_peida" id="3">
+      <div class="tekst" id="3">
         Seotud vektori \(\overline{XY}\) pikkuseks \(\overline{|XY|}\)
         nimetatakse teda määrava lõigu XY pikkust.
       </div>
-      <div name="tekst" class="tekst_peida" id="2">
+      <div class="tekst" id="2">
         Seotud vektorit \(\overline{YX}\) nimetatakse seotud vektori
         \(\overline{XY}\) \(\bold{vastandvektoriks}\), mida tähistame
         −\(\overline{XY}\) , s.o −\(\overline{XY}\) = \(\overline{YX}\).
       </div>
-      <div name="tekst" class="tekst_peida" id="4">
+      <div class="tekst" id="4">
         Seotud vektorit \(\overline{AB}\) nimetatakse
-        \(\bold{kollineaarseteks}\) seotud vektoriga \(\overline{CD}\), kui
-        lõik \(\overline{AB}\) on paralleelne lõiguga CD (või lõigud AB ja CD
-        asuvad ühel ja samal sirgel, sealhulgas ühtivad). Öeldut tähistatakse
+        \(\bold{kollineaarseteks}\) seotud vektoriga \(\overline{CD}\), kui lõik
+        \(\overline{AB}\) on paralleelne lõiguga CD (või lõigud AB ja CD asuvad
+        ühel ja samal sirgel, sealhulgas ühtivad). Öeldut tähistatakse
         \(\overline{AB}\) ∥ \(\overline{CD}\) ning kui vektorid ei ole
         kollineaarsed, siis \(\overline{AB}\) ∦ \(\overline{CD}\).
       </div>
-      <div name="tekst" class="tekst_peida" id="5">
-        Seotud vektorit \(\overline{AB}\) nimetatakse
-        \(\bold{samasuunaliseks}\) (vastassuunaliseks) seotud vektoriga
-        \(\overline{CD}\), kui \(\overline{AB}\) ∥ \(\overline{CD}\) ja suunad
-        on ühesugused (suunad on vastupidised). Samasuunalisust tähistatakse
-        \(\overline{AB}\) ↑↑ \(\overline{CD}\) ja vastassuunalisust
-        \(\overline{AB}\) ↑↓ \(\overline{CD}\)
+      <div class="tekst" id="5">
+        Seotud vektorit \(\overline{AB}\) nimetatakse \(\bold{samasuunaliseks}\)
+        (vastassuunaliseks) seotud vektoriga \(\overline{CD}\), kui
+        \(\overline{AB}\) ∥ \(\overline{CD}\) ja suunad on ühesugused (suunad on
+        vastupidised). Samasuunalisust tähistatakse \(\overline{AB}\) ↑↑
+        \(\overline{CD}\) ja vastassuunalisust \(\overline{AB}\) ↑↓
+        \(\overline{CD}\)
       </div>
-      <div name="tekst" class="tekst_peida" id="6">
+      <div class="tekst" id="6">
         Seotud vektorit \(\overline{AB}\) nimetatakse \(\bold{ekvivaltseks}\)
         seotud vektoriga \(\overline{AB}\), kui |\(\overline{AB}\)| =
         |\(\overline{AB}\)| ja \(\overline{AB}\) ↑↑ \(\overline{CD}\). Seda
         tähistatakse \(\overline{AB}\) ∼ \(\overline{CD}\).
       </div>
-      <div name="tekst" class="tekst_peida" id="7">
-        Seotud vektoriga \(\overline{AB}\) ekvivalentsete seotud vektorite
-        hulka {\(\overline{XY}\) | \(\overline{XY}\) ∼ \(\overline{XY}\)}
-        nimetatakse \(\bold{ekvivalentsiklassiks}\) \(\bold{moodustajaga}\)
+      <div class="tekst" id="7">
+        Seotud vektoriga \(\overline{AB}\) ekvivalentsete seotud vektorite hulka
+        {\(\overline{XY}\) | \(\overline{XY}\) ∼ \(\overline{XY}\)} nimetatakse
+        \(\bold{ekvivalentsiklassiks}\) \(\bold{moodustajaga}\)
         \(\overline{AB}\). Viimast tähistatakse \(\bold{AB}\). Seega
         \(\bold{AB}\) = {\(\overline{XY}\) | \(\overline{XY}\) ∼
         \(\overline{AB}\)}.
       </div>
-      <div name="tekst" class="tekst_peida" id="8">
-        Tähistame E1 = {\(\bold{XY}\) | \(\overline{XY}\) ∈
-        \(\overline{E1}\)}, E2 = {\(\bold{XY}\) | \(\overline{XY}\) ∈
-        \(\overline{E2}\)} ja E3 = {\(\bold{XY}\) | \(\overline{XY}\) ∈
-        \(\overline{E3}\)} vastavalt kõiki sirge E1, tasandi E2 ja ruumi E3
-        poolt moodustatud ekvivalentsiklasse ja nimetatame nende elemente
-        \(\bold{vabavektoriteks}\). Ühine tähis vabavektorite vektorruumi
-        jaoks olgu E.
+      <div class="tekst" id="8">
+        Tähistame E1 = {\(\bold{XY}\) | \(\overline{XY}\) ∈ \(\overline{E1}\)},
+        E2 = {\(\bold{XY}\) | \(\overline{XY}\) ∈ \(\overline{E2}\)} ja E3 =
+        {\(\bold{XY}\) | \(\overline{XY}\) ∈ \(\overline{E3}\)} vastavalt kõiki
+        sirge E1, tasandi E2 ja ruumi E3 poolt moodustatud ekvivalentsiklasse ja
+        nimetatame nende elemente \(\bold{vabavektoriteks}\). Ühine tähis
+        vabavektorite vektorruumi jaoks olgu E.
       </div>
-      <div name="tekst" class="tekst_peida" id="9">
-        Vabavektori \(\bold{x}\)= \(\bold{AB}\) ∈ E
-        \(\bold{vastaandvektoriks}\) nimetatakse vabavektorit −\(\bold{x}\) =
-        \(\bold{BA}\) ∈ E.
+      <div class="tekst" id="9">
+        Vabavektori \(\bold{x}\)= \(\bold{AB}\) ∈ E \(\bold{vastaandvektoriks}\)
+        nimetatakse vabavektorit −\(\bold{x}\) = \(\bold{BA}\) ∈ E.
       </div>
-      <div name="tekst" class="tekst_peida" id="10">
+      <div class="tekst" id="10">
         Vabavektoreid \(\bold{x}\), \(\bold{y}\) ∈ E nimetatakse
         \(\bold{kollineaarseteks}\) , kui nende vektorite moodustajad on
         kollineaarsed ehk \(\overline{AB}\) ∥ \(\overline{A′B′}\) , kui
-        \(\overline{AB}\) ∈ \(\bold{x}\) ja \(\overline{A′B′}\) ∈
-        \(\bold{y}\), ning seda tähistatakse \(\bold{x}\) ∥ \(\bold{y}\).
+        \(\overline{AB}\) ∈ \(\bold{x}\) ja \(\overline{A′B′}\) ∈ \(\bold{y}\),
+        ning seda tähistatakse \(\bold{x}\) ∥ \(\bold{y}\).
       </div>
-      <div name="tekst" class="tekst_peida" id="11">
+      <div class="tekst" id="11">
         Vabavektoreid \(\bold{x}\), \(\bold{y}\) ∈ E nimetatakse
         \(\bold{samasuunalisteks}\) (vastassuunalisteks), kui nende vektorite
         moodustajad on samasuunalised (vastassuunalised) ehk \(\overline{AB}\)
-        ↑↑ \(\overline{A′B′}\) (\(\overline{AB}\) ↑↓ \(\overline{A′B′}\)).
-        Seda tähistatakse \(\bold{x}\) ↑↑ \(\bold{y}\) (\(\bold{x}\) ↑↓
+        ↑↑ \(\overline{A′B′}\) (\(\overline{AB}\) ↑↓ \(\overline{A′B′}\)). Seda
+        tähistatakse \(\bold{x}\) ↑↑ \(\bold{y}\) (\(\bold{x}\) ↑↓
         \(\bold{y}\)).
       </div>
-      <div name="tekst" class="tekst_peida" id="12">
+      <div class="tekst" id="12">
         Punkti X′ nimetatakse punkti X \(\bold{projektsiooniks}\)
-        \(\bold{sirgele}\) s \(\bold{paralleelselt}\) \(\bold{sirgega}\) l. <br> <br><br><br>
-        <img src="Capture.PNG" alt="I">
+        \(\bold{sirgele}\) s \(\bold{paralleelselt}\) \(\bold{sirgega}\) l.
+        <br />
+        <br /><br /><br />
+        <img src="Capture.PNG" alt="I" />
       </div>
-      <div name="tekst" class="tekst_peida" id="13">
+      <div class="tekst" id="13">
         Vektorit \(\bold{X′Y′}\) nimetatakse vektori x
-        \(\bold{projektsioonivektoriks}\) vektori a sihile paralleelselt
-        sirgega l (tasandiga π). Vektorit \(\bold{X′Y′}\) tähistatakse
-        \(\bold{Pr}\)\(\tiny{a}\)\(\bold{x}\).<br> <br><br><br>
-        <img src="Capture2.PNG" alt="I">
+        \(\bold{projektsioonivektoriks}\) vektori a sihile paralleelselt sirgega
+        l (tasandiga π). Vektorit \(\bold{X′Y′}\) tähistatakse
+        \(\bold{Pr}\)\(\tiny{a}\)\(\bold{x}\).<br />
+        <br /><br /><br />
+        <img src="Capture2.PNG" alt="I" />
       </div>
-      <div name="tekst" class="tekst_peida" id="14">
+      <div class="tekst" id="14">
         Mistahes punkti X ∈ E \(\bold{kohavektoriks}\) nimetatakse vektorit
         \(\bold{OX}\) ∈ E.
       </div>
-      <div name="tekst" class="tekst_peida" id="15">
+      <div class="tekst" id="15">
         Fikseeritud n ∈ N korral nimetatakse hulka <br />
-        \(\R^n\) = {(x\(\tiny{1}\), . . . , x\(\tiny{n}\)| x\(\tiny{1}\), . .
-        . , x\(\tiny{n}\) ∈ \(\R^n\)} <br />
+        \(\R^n\) = {(x\(\tiny{1}\), . . . , x\(\tiny{n}\)| x\(\tiny{1}\), . . .
+        , x\(\tiny{n}\) ∈ \(\R^n\)} <br />
         n-\(\bold{mõõtmeliseks}\) (\(\bold{eukleidiliseks}\))
         \(\bold{vektorruumiks}\), milles on defineeritud liitmine <br />
         \(\bold{x}\) + \(\bold{y}\) = (x\(\tiny{1}\) + y\(\tiny{1}\), . . . ,
-        x\(\tiny{n}\) + y\(\tiny{n}\)), \(\bold{x}\), \(\bold{y}\) ∈ \(\R^n\)
-        ja skalaariga korrutamine <br />
-        α\(\bold{x}\) = (αx\(\tiny{1}\), . . . , αx\(\tiny{n}\)),
-        \(\bold{x}\)∈ \(\R^n\), α ∈ \(\R\).
+        x\(\tiny{n}\) + y\(\tiny{n}\)), \(\bold{x}\), \(\bold{y}\) ∈ \(\R^n\) ja
+        skalaariga korrutamine <br />
+        α\(\bold{x}\) = (αx\(\tiny{1}\), . . . , αx\(\tiny{n}\)), \(\bold{x}\)∈
+        \(\R^n\), α ∈ \(\R\).
       </div>
-      <div name="tekst" class="tekst_peida" id="16">
-        Vektorite süsteemi e\(\tiny{1}\), . . . , e\(\tiny{n}\) ∈ \(\R^n\),
-        kus <br />
+      <div class="tekst" id="16">
+        Vektorite süsteemi e\(\tiny{1}\), . . . , e\(\tiny{n}\) ∈ \(\R^n\), kus
+        <br />
         e\(\tiny{1}\) = (1, 0, 0, . . . , 0),<br />
         e\(\tiny{2}\) = (0, 1, 0, . . . , 0),<br />
         .<br />
@@ -216,11 +273,11 @@
         nimetatakse vektorruumi \(\R^n\) \(\bold{loomulikuks}\)
         \(\bold{baasiks}\).
       </div>
-      <div name="tekst" class="tekst_peida" id="17">
+      <div class="tekst" id="17">
         Vektori \(\bold{x}\) ∈ \(\R^n\) pikkus |\(\bold{x}\)| defineeritakse
         võrdusega |\(\bold{x}\)| = \(\sqrt{x^2_1 + ... + x^2_n}\)
       </div>
-      <div name="tekst" class="tekst_peida" id="18">
+      <div class="tekst" id="18">
         Olgu antud nullvektorist erinevad vektorid x, y ∈ E. Võtame vektori x
         kui vabavektori ühe esindaja \(\overline{AB}\), samuti vabavektori y
         esindaja \(\overline{AC}\). Vektorite x ja y \(\bold{vaheliseks}\)
@@ -228,37 +285,34 @@
         lühemat teed pidi lõiguga AC samasse suunda. Seda nurka tähistame ∠(x,
         y), siis ∠(x, y) ∈ [0, π]
       </div>
-      <div name="tekst" class="tekst_peida" id="18">
-        Vektorite a, b ∈ E \(\bold{skalaarkorrutiseks}\) nimetatakse
-        reaalarvu, mis võrdub nende vektorite pikkuste ja nendevahelise nurga
-        koosinuse korrutisega, s.t ⟨a, b⟩ = |a||b| cos ∠(a, b).
+      <div class="tekst" id="18">
+        Vektorite a, b ∈ E \(\bold{skalaarkorrutiseks}\) nimetatakse reaalarvu,
+        mis võrdub nende vektorite pikkuste ja nendevahelise nurga koosinuse
+        korrutisega, s.t ⟨a, b⟩ = |a||b| cos ∠(a, b).
       </div>
-      <div name="tekst" class="tekst_peida" id="19">
-        Vektorite a, b ∈ E3 \(\bold{vektorkorrutiseks}\) nimetatakse vektorit
-        a × b,mis rahuldab järgmist kolme tingimust: <br />
+      <div class="tekst" id="19">
+        Vektorite a, b ∈ E3 \(\bold{vektorkorrutiseks}\) nimetatakse vektorit a
+        × b,mis rahuldab järgmist kolme tingimust: <br />
         1. |a × b| = |a||b|sin ∠(a, b),<br />
         2. a × b ⊥ a ja a × b ⊥ b, s.t a ja b on risti vektoriga a × b, <br />
         3. {a, b, a × b} on parema käe kolmik <br />
       </div>
-      <div name="tekst" class="tekst_peida" id="20">
+      <div class="tekst" id="20">
         Vektorite a, b, c ∈ E3 \(\bold{segakorrutiseks}\) nimetatakse arvu
         <br />
         abc = ⟨a × b, c⟩.
       </div>
-      <div name="tekst" class="tekst_peida" id="21">
+      <div class="tekst" id="21">
         Kolme vektori segakorrutise absoluutväärtus võrdub neile vektoritele
         ehitatud rööptahuka ruumalaga, <br />
         V\(\tiny{rt}\) = |abc|.
       </div>
-      <div name="tekst" class="tekst_peida" id="22">
+      <div class="tekst" id="22">
         Kolmele vektorile ehitatud tetraeedri ruumala on <br />
         V\(\tiny{te}\)=\(\frac{1}{6}\)|abc|
       </div>
-  </div>
+    </div>
 
-    </a>
     <script src="nupud.js"></script>
   </body>
 </html>
-
-

@@ -1,0 +1,45 @@
+.sisuNupud {
+  margin-top: 2%;
+  margin-left: 4rem;
+  float: left;
+  display: grid;
+  grid-gap: 0.3rem;
+}
+.sisuNupud .btn {
+  border: transparent solid 3px;
+  border-radius: 3px;
+  padding: 0.7rem 3vw;
+  animation: fadeInLReverse 0.5s cubic-bezier(0.65, -0.18, 0.18, 0.88);
+}
+.sisuNupud .btn:hover,
+.btn:focus {
+  border: #99bfea solid 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  animation: fadeInL 0.5s cubic-bezier(0.65, -0.18, 0.18, 0.88);
+  transform: translate3d(10%, 0, 0);
+}
+.tekst {
+  margin-top: 6%;
+  margin-left: 35%;
+  margin-right: 4%;
+  font-size: 1.5vw;
+  position: absolute;
+  visibility: hidden;
+}
+@keyframes fadeInL {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(10%, 0, 0);
+  }
+}
+@keyframes fadeInLReverse {
+  from {
+    transform: translate3d(10%, 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
