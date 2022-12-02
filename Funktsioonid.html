@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
+      integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"
+      integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+    <title>Funktsioonid</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>MafHelp</h1>
+      <div class="navDB">
+        <div class="navB">
+          <button class="navTeema">Vektorid & tasandid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Vektorid.html'"
+            >
+              Vektorid ruumis
+            </button>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Tasandid.html'"
+            >
+              Sirge & tasand ruumis
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Kompleksarvud</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Kompleks.html'"
+            >
+              Trigonomeetriline- & Algebraline & Eksponentkuju
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Funktsioonid</button>
+          <div>
+            <button class="navAlaTeema">Funktsioonid</button>
+            <button class="navAlaTeema">Piirväärtus & pidevus</button>
+            <button class="navAlaTeema">Tuletis & Diferentsiaal</button>
+            <button class="navAlaTeema">Funktsiooni uurimine</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Integraal</button>
+          <div>
+            <button class="navAlaTeema">Algfunktsioon</button>
+            <button class="navAlaTeema">Diferentsiaal-võrrandid</button>
+            <button class="navAlaTeema">Pindala</button>
+            <button class="navAlaTeema">Määratud integraal</button>
+            <button class="navAlaTeema">Rakendused</button>
+            <button class="navAlaTeema">Päratud integraalid</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Maatriksid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Maatriksid.html'"
+            >
+              Maatriksid & Determinandid
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <div class="sisu">
+      <button type="button" class="btn">Funktsioonide põhimõiste</button>
+      <div>
+        <p style="line-height:25px;">
+          Olgu antud hulk X ⊂ R. Kui igale arvule x ∈ X on vastavusse seatud üks ja ainult üks reaalarv y, siis
+          öeldakse, et hulgal X on defineeritud funktsioon f, mida märgitakse y = f(x).
+          Kui suurus y on võrdeline (proportsionaalne) suurusega f(x), siis seda sõltuvust iseloomustab funktsioon y = kf(x), kus k on mingi konstant (võrdetegur).
+        <hr>
+        </p> 
+        <p style="line-height:25px;">
+          Kõikide elementide X hulka, mille puhul elemendile x ∈ X seatakse funktsiooniga f vastavusse f(x),
+          nimetatakse funktsiooni f määramispiirkonnaks.
+          Funktsiooni f kõikide väärtuste hulka {y | y = f(x), x ∈ X} nimetatakse funktsiooni f muutumispiirkonnaks ehk väärtuste hulgaks ja seda tähistatakse f(X).
+        <hr>
+        </p>
+        <p style="line-height:25px;">
+          Funktsiooni y = f(x) nimetatakse
+          1. paarisfunktsiooniks määramispiirkonnas X, kui f(-x) = f(x) iga x ∈ X korral;
+          2. paarituks funktsiooniks, kui f(-x) = -f(x) iga x ∈ X korral;
+          3. perioodiliseks, kui leidub arv T > 0 nii, et f(x + T) = f(x) iga x ∈ X korral
+
+
+        </p>
+        <button type="button" class="btn">Pöörd-, Logaritm- ning eksponentfunktsioonid </button>
+      <div>
+        <p style="line-height:25px;">
+          Funktsiooni f: X → Y nimetatakse üksüheseks funktsiooniks, kui iga x1, x2 ∈ X, x1 ≠ x2, korral ka
+          funktsiooni väärtused on erinevad hulgas Y , s.t f(x1) ≠ f(x2).
+          Üksühese vastavuse f : X → Y pöördfunktsioon 
+          f<sup>-1</sup>: Y → X määratakse võrdusega f -1 (y) = x, kus f(x) = y iga x ∈ X korral.
+        <hr>
+        </p>
+        <p style="line-height:25px;">
+          Eksponentfunktsioon on y = a<sup>x</sup>, kus
+          a > 0 ja a ≠ 1. Funktsiooni y = e<sup>x</sup>korral räägitakse eksponentsiaalsest
+          kasvust ja y = e<sup>-x</sup> korral eksponentsiaalsest langusest.
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Logaritmfunktsioon, Positiivse arvu x logaritmiks alusel a (a > 0, a ≠ 1) nimetatakse
+          arvu c, millega alust a astendades saadakse arv x, s.t. log<sub>a</sub> x = c ⇔ a c = x. 
+          Logaritm- ja eksponentfunktsioon on teineteise pöördfunktsioonid.
+
+        </p>
+        <picture>
+          <img src="data:image/png;base64,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" alt="Exponent funktsioon">
+        </picture>
+        <hr>
+        <button type="button" class="btn">Funktsiooni piirväärtus</button>
+      <div>
+        <p style="line-height:25px;">
+          Hulga X ⊂ R kuhjumispunktiks nimetatakse punkti a ∈ R, kui punkti a iga ümbrus 
+          (vahemikud (a −δ, a + δ), kus δ > 0) sisaldab vähemalt ühte temast erinevat hulga X punkti.
+
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Olgu a funktsiooni f määramispiirkonna X kuhjumispunkt. Reaalarvu A nimetatakse funktsiooni f piirväärtuseks punktis a 
+          ja kirjutatakse \lim\limits_x→a f(x) = A,
+          kui punktile a piisavalt lähedastes määramispiirkonna X punktides x (välja arvatud, võib-olla, punktis aeneses) 
+          erinevad vastavad funktsiooni väärtused f(x) arvust A kui tahes vähe.
+        </p>
+        <picture>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tamasol_SVG.svg/300px-Tamasol_SVG.svg.png">
+        </picture>
+        <hr>
+        <button type="button" class="btn">pidevad ja katkevad Funktsioonid</button>
+      <div>
+        <p style="line-height:25px;">
+          Vaatleme reaalmuutuja funktsioone y = f(x), x ∈ X ⊂ R. Olgu a ∈ X.
+          Funktsiooni f nimetatakse pidevaks punktis a, kui limx→a f(x) = f(a). 
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Selleks, et funktsioon oleks pidev punktis a, peavad olema täidetud kõik järgmised kolm tingimust: 
+          1. funktsioonil on olemas väärtus f(a); 
+          2. funktsioonil on olemas piirväärtus lim f(x) protsessis x → a; 
+          3. limx→a f(x) = f(a). Kui funktsioon f ei ole pidev punktis a, kuid on määratud tema ümbruses, siis öeldakse, et funktsioon
+          f on katkev punktis a (punkti a nimetatakse funktsiooni f katkevuspunktiks). Katkevuspunktist a räägitakse ka siis, kui funktsioon f ei ole määratud punktis a, kuid eksisteerib limx→a f(x).
+
+        </p>
+        <picture>
+          <img src="data:image/png;base64,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">
+        </picture>
+        <hr>
+        <p style="line-height:25px;">
+          Kõik elementaarfunktsioonid on pidevad oma määramispiirkonnas
+        </p>
+        <hr>
+      </div>
+        <button type="button" class="btn">Funktsiooni tuletis</button>
+      <div>
+        <p style="line-height:25px;">
+          Olgu antud funktsioon f: X → R, X ⊂ R. Anname argumendile a ∈ X muudu ∆x nii, et a + ∆x ∈ X,
+          vastav funktsiooni muut olgu ∆f = f(a + ∆x) - f(a). Kui eksisteerib lõplik piirväärtus
+          siis seda piirväärtust nimetatakse funktsiooni f tuletiseks punktis a ja tähistatakse f'(a).
+
+        
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Teoreem liitfunktsiooni diferentseerimisest. Kui f : X → R on diferentseeruv punktis x ∈ X, 
+          f(X) ⊂ Y ja g : Y → R on diferentseeruv punktis y = f(x), siis h = gf : X → R on diferentseeruv punktis x ja h'(x) = g'(f(x))f'(x)
+
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Logaritmilise diferentseerimise võte on vältimatu u(x)<sup>v(x)</sup> tüüpi funktsioonide korral, kuid see on abiks ka siis, kui f sisaldab palju korrutisi ja jagatisi.
+          1. kirjutame: |y| = |f(x)|
+          2. Võtame logaritmi võrrandi mõlemast poolest: ln|y| = ln|f(x)|
+          3. Võtame tuletise: 1/y y' = (ln|f(x)|)'
+          4. Saadud seosest avaldame y': y' = y(ln|f(x)|)''
+
+        </p>
+        <hr>
+      </div>
+      <button type="button" class="btn">Funktsiooni diferentsiaal ja ligikaudne arvutamine</button>
+      <div>
+        <p style="line-height:25px;">
+          Olgu antud punktis x diferentseeruv funktsioon f. Anname argumendile x muudu ∆x. 
+          Korrutist f'(x)∆x nimetatakse funktsiooni f diferentsiaaliks punktis x. 
+          Tähistame dy või df(x), seega dy = f'(x)∆x ehk dy = f'(x)dx.
+        
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Kui ∆x on küllalt väike, siis võime funktsiooni f muudu ∆f asemel leida funktsiooni f diferentsiaali df,
+          ∆f ≈ df ehk f(x + ∆x) - f(x) ≈ f'(x)∆x.
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Kui ∆x on küllalt väike, siis f(x + ∆x) ≈ f(x) + f'(x)∆x kaudu saab funktsiooni väärtuse ligikaudselt kätte.
+
+        </p>
+        <hr>
+      </div>
+      <button type="button" class="btn">Funktsiooni uurimine</button>
+      <div>
+        <p style="line-height:25px;">
+          Joone puutujaks punktis A nimetatakse sirget, mis on lõikaja AB piirseisuks, 
+          kui punkt B läheneb punktile A mööda joont y = f(x).
+          Funktsiooni f tuletis f'(x0) on selle joone puutuja tõus punktis (x0, f(x0)) ja puutuja võrrand
+           avaldub järgmiselt: y = f(x0) + f'(x0)(x - x0).
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Joone y = f(x) normaaliks (ehk ristsirgeks) punktis (x0, f(x0)) nimetatakse sirget, 
+          mis ristub sedapunkti läbiva puutujaga.
+        </p>
+
+        <hr>
+        <p style="line-height:25px;">
+          Olgu funktsioon f diferentseeruv vahemikus (a, b). 
+          Kui f'(x) > 0 iga argumendi väärtuse x ∈ (a, b)korral, siis funktsioon f on kasvav selles vahemikus, 
+          ja kui f'(x) < 0 iga argumendi väärtuse x ∈ (a, b)korral, siis funktsioon f on kahanev selles vahemikus.
+
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Funktsiooni f : (a, b) → R nimetatakse kumeraks vahemikus (a, b), 
+          kui igas punktis x ∈ (a, b) funktsiooni graafiku puutuja asub ülalpool graafikut
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Funktsiooni f : (a, b) → R nimetatakse nõgusaks vahemikus (a, b), 
+          kui igas punktis x ∈ (a, b) funktsiooni graafiku puutuja asub allpool graafikut.
+
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Olgu funktsioon f kaks korda diferentseeruv vahemiks (a, b). 
+          Kui f''(x) < 0 iga argumendi x ∈ (a, b) korral, siis f on kumer selles vahemikus. 
+          Kui f''(x) > 0 iga argumendi x ∈ (a, b) korral, siis f on nõgus selles vahemikus.
+
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Olgu funktsioon f diferentseeruv vähemalt vahemikes (a, c) ja (c, b) ning pidev punktis c. 
+          Kui funktsioon f on kumer vahemikus (a, c) ja nõgus vahemikus (c, b) (või nõgus vahemikus (a, c) ja kumer vahemikus (c, b)), siis punkti c nimetatakse käänupunktiks.
+
+        </p>
+        <hr>
+      </div>
+      <button type="button" class="btn">Funktsiooni ekstreemumid</button>
+      <div>
+        <p style="line-height:25px;">
+          Öeldakse, et funktsioonil f : X → R, X ⊂ R, on punktis (kohal) a ∈ X lokaalne maksimum, 
+          kui leidub selle punkti ümbrus (a - δ, a + δ), δ > 0, nii et
+          f(x) ≤ f(a), iga x ∈ X ⋂ (a - δ, a + δ) korral.
+          Öeldakse, et funktsioonil f on punktis (kohal) a lokaalne miinimum, kui leidub selle punkti ümbrus (a - δ, a + δ), δ > 0, nii et f(x) ≥ f(a), iga x ∈ X ⋂ (a - δ, a + δ) korral.
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Funktsiooni f määramispiirkonna punkte, kus f'(x) = 0 ja punkte, 
+          kus funktsioon f ei ole diferentseeruv, nimetatakse funktsiooni f kriitilisteks punktideks. 
+          Punkte c, kus f'(c) = 0, nimetatakse statsionaarseteks punktideks.
+
+        
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Olgu funktsioon f kaks korda diferentseeruv punktis c. 
+          Siis funktsioonil f on argumendi väärtusel clokaalne maksimum, 
+          kui f'(c) = 0 ja f''(c) < 0,funktsioonil f on argumendi väärtusel c lokaalne miinimum, 
+          kui f'(c) = 0 ja f''(c) > 0.
+        
+        </p>
+        <hr>
+        <p style="line-height:25px;">
+          Funktsiooni globaalsed ekstreemumid on funktsiooni suurim ja vähim väärtus mingis piirkonnas. 
+          Globaalsete ekstreemumite leidmine:
+          1. Leiame kõik lokaalsed ekstreemumid.
+          2. Arvutame funktsiooni väärtused piirkonna otspunktides (kui tegemist on lõiguga).
+          3. Saadud funktsiooni väärtustest suurim on globaalne maksimum ja väikseim on globaalne miinimum.
+
+        </p>
+
+      </div>
+    </div>
+    <script src="nupud.js"></script>
+  </body>
+</html>

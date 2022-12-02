@@ -6,47 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <ul>
-      <li>
-        <td>
-          Võib lisada rohkem selliseid nuppe veel selle alla, et n-ö alateemasid
-          rõhutada
-        </td>
-      </li>
-      <li>
-        <td>
-          Lahe oleks, kui paigaldaksime visuaalid, nt. mida skalaarkorrutis
-          näivalt representeerib
-        </td>
-      </li>
-      <li>
-        <td>
-          Muidugi mata valemid ka, aga võiksid olla teistsuguse backgroundiga,
-          et neid rõhutada
-        </td>
-      </li>
-    </ul>
-    <button type="button" class="btn">Vektorid ja tasand</button>
-    <div class="vektorid">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
-        delectus.
-      </p>
+    <!--Lisada mediaquery, selleks, kui ekraan liiga väikesks läheb 1020x???-->
+    <div class="navbar">
+      <h1>MafHelp</h1>
+      <div class="navDB">
+        <div class="navB">
+          <button class="navTeema">Vektorid & tasandid</button>
+          <div>
+            <button class="navAlaTeema">Vektorid ruumis</button>
+            <button class="navAlaTeema">Sirge & tasand ruumis</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Kompleksarvud</button>
+          <div>
+            <button class="navAlaTeema">
+              Trigonomeetriline- & Algebralinekuju
+            </button>
+            <button class="navAlaTeema">Eksponentkuju</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Funktsioonid</button>
+          <div>
+            <button class="navAlaTeema">Funktsioonid</button>
+            <button class="navAlaTeema">Piirväärtus & pidevus</button>
+            <button class="navAlaTeema">Tuletis & Diferentsiaal</button>
+            <button class="navAlaTeema">Funktsiooni uurimine</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Integraal</button>
+          <div>
+            <button class="navAlaTeema">Algfunktsioon</button>
+            <button class="navAlaTeema">Diferentsiaal-võrrandid</button>
+            <button class="navAlaTeema">Pindala</button>
+            <button class="navAlaTeema">Määratud integraal</button>
+            <button class="navAlaTeema">Rakendused</button>
+            <button class="navAlaTeema">Päratud integraalid</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Maatriksid</button>
+          <div>
+            <button class="navAlaTeema">Maatriksid & Determinandid</button>
+            <button class="navAlaTeema">
+              Pöördmaatriks & lineaar-võrrandisüsteem
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <button type="button" class="btn">Funktsioonid ja diferentsiaal</button>
-    <div class="vektorid">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, maxime.
-      </p>
-    </div>
-    <button type="button" class="btn">Maatriksid</button>
-    <div class="vektorid">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio, maxime.
-      </p>
+    <div class="sisu">
+      <div class="image"></div>
+      <div class="text">
+        <h1>Maths guidance for undergrads</h1>
+        <br />
+        <h1>from undergrads</h1>
+      </div>
     </div>
   </body>
-  <script src="index.js"></script>
 </html>

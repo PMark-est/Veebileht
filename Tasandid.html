@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
+      integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"
+      integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+    <title>Tasandid</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>MafHelp</h1>
+      <div class="navDB">
+        <div class="navB">
+          <button class="navTeema">Vektorid & tasandid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Vektorid.html'"
+            >
+              Vektorid ruumis
+            </button>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Tasandid.html'"
+            >
+              Sirge & tasand ruumis
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Kompleksarvud</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Kompleks.html'"
+            >
+              Trigonomeetriline- & Algebraline & Eksponentkuju
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Funktsioonid</button>
+          <div>
+            <button class="navAlaTeema">Funktsioonid</button>
+            <button class="navAlaTeema">Piirväärtus & pidevus</button>
+            <button class="navAlaTeema">Tuletis & Diferentsiaal</button>
+            <button class="navAlaTeema">Funktsiooni uurimine</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Integraal</button>
+          <div>
+            <button class="navAlaTeema">Algfunktsioon</button>
+            <button class="navAlaTeema">Diferentsiaal-võrrandid</button>
+            <button class="navAlaTeema">Pindala</button>
+            <button class="navAlaTeema">Määratud integraal</button>
+            <button class="navAlaTeema">Rakendused</button>
+            <button class="navAlaTeema">Päratud integraalid</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Maatriksid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Maatriksid.html'"
+            >
+              Maatriksid & Determinandid
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sisuNupud">
+      <button type="button" class="btn" id="1" onclick="reply_click(this.id)">
+        Tasandi riht
+      </button>
+      <button type="button" class="btn" id="2" onclick="reply_click(this.id)">
+        Tasandiparameetriline vektorvõrrand
+      </button>
+      <button type="button" class="btn" id="3" onclick="reply_click(this.id)">
+        ... kohavektorite kaudu
+      </button>
+      <button type="button" class="btn" id="4" onclick="reply_click(this.id)">
+        Tasandi parameetriline võrrand koordinaatides
+      </button>
+      <button type="button" class="btn" id="5" onclick="reply_click(this.id)">
+        Tasandi võrrandi üldkuju
+      </button>
+      <button type="button" class="btn" id="6" onclick="reply_click(this.id)">
+        Sirge parameetriline vektorvõrrand
+      </button>
+      <button type="button" class="btn" id="7" onclick="reply_click(this.id)">
+        .. kohavektorite abil
+      </button>
+      <button type="button" class="btn" id="8" onclick="reply_click(this.id)">
+        Sirge parameetriline võrrand koordinaatides
+      </button>
+      <button type="button" class="btn" id="9" onclick="reply_click(this.id)">
+        Kanoonilised võrrandid
+      </button>
+      <button type="button" class="btn" id="10" onclick="reply_click(this.id)">
+        Sirge üldkujulisteks võrranditeks
+      </button>
+      <button type="button" class="btn" id="11" onclick="reply_click(this.id)">
+        Punkti kaugust sirgest
+      </button>
+      <button type="button" class="btn" id="12" onclick="reply_click(this.id)">
+        Punkti kaugus tasandist
+      </button>
+      <button type="button" class="btn" id="13" onclick="reply_click(this.id)">
+        Nurk kahe sirge vahel
+      </button>
+      <button type="button" class="btn" id="14" onclick="reply_click(this.id)">
+        Nurk kahe tasandi vahel
+      </button>
+      <button type="button" class="btn" id="15" onclick="reply_click(this.id)">
+        Nurk sirge ja tasand vahel
+      </button>
+    </div>
+    <div class="sisuTekst">
+      <div class="tekst" id="1">
+        Vaatame tasandit π ruumis \(E_3\). Olgu sellel tasandil antud punkt A
+        ning kaks mittekollineaarset ruumi E3 vektorit u ja v. <br />
+        Tasandit määravat mittekollineaarset vektorite süsteemi {u, v} ⊂ \(E_3\)
+        nimetatakse \(\bold{tasandi}\) \(\bold{rihiks}\), vektoreid u ja v
+        tasandi rihivektoriteks<br /><br /><br />
+        <img src="Capture4.PNG" alt="I" />
+      </div>
+      <div class="tekst" id="3">
+        Esitame selle võrrandi veel kohavektorite kaudu. Olgu ruumi \(E_3\)
+        nullpunkt O. Olgu punktide A, X ∈ π kohavektorid vastavalt OA ja OX.
+        <br />
+        Võrrandit \(\bold{OX} = \bold{OA} + t_1u + t_2v, t_1, t_2 ∈ \R\),
+        nimetatakse \(\bold{tasandi}\)\(\bold{parameetriliseks}\)
+        \(\bold{vektorvõrrandiks}\) \(\bold{kohavektorite}\) \(\bold{kaudu}\)<br /><br /><br />
+        <img src="Capture5.PNG" alt="I" />
+      </div>
+      <div class="tekst" id="2">
+        Võrrandit <br />
+        \(\bold{AX} = t_1 u + t_2 v, t_1, t_2 ∈ \R\),<br />
+        nimetatakse tasandiparameetriliseks vektorvõrrandiks. Muutujaid \(t_1\)
+        ja \(t_2\) nimetatakse parameetriteks.
+      </div>
+      <div class="tekst" id="4">
+        Võrrandeid <br />
+        \(x = a_1 + t_1 u_1 + t_2 v_1\), <br />
+        \(y = a_2 + t_1 u_2 + t_2 v_2\), \(t_1, t_2 ∈ \R\),<br />
+        \(z = a_3 + t_1 u_3 + t_2 v_3\),<br />
+
+        nimetatakse tasandi \(\bold{parameetrilisteks}\) \(\bold{võrranditeks}\)
+        \(\bold{koordinaatides}\).
+      </div>
+      <div class="tekst" id="5">
+        Võrrandit \(A_x + B_y + C_z + D = 0\) nimetatakse tasandi
+        \(\bold{võrrandiks}\) \(\bold{üldkujul}\) ehk tasandi üldkujuliseks
+        võrrandiks ning vektorit n = (A, B, C) nimetatakse tasandi
+        \(\bold{normaalvektoriks}\).
+      </div>
+      <div class="tekst" id="6">
+        Sirget saab määrata kahe etteantud punkti abil. Tavaliselt kasutatakse
+        järgmist võimalust: sirgel fikseeritakse üks punkt A ja nullist erineva
+        vektori s abil antakse sirge siht. Tähistame sirget tähega l. Olgu X ∈ l
+        sirge suvaline punkt, siis punkte A ja X ühendab vabavektor AX ∈ E
+        <br />
+        Võrrandit <br />
+        \(\bold{AX} = ts, t ∈ \R,\)<br />
+        nimetatakse \(\bold{sirge}\) \(\bold{parameetriliseks}\)
+        \(\bold{vektorvõrrandiks}\).
+      </div>
+      <div class="tekst" id="7">
+        Esitame selle võrrandi kohavektorite kaudu. Olgu O ruumi E nullpunkt.
+        Olgu punktide A, X ∈ l kohavektorid vastavalt OA ja OX. <br />
+        Võrrandit<br />
+        \(\bold{OX} = OA + ts, t ∈ \R\)OX = OA + ts, t ∈ R,<br />
+        nimetatakse sirge \(\bold{parameetriliseks}\)
+        \(\bold{vektorvõrrandiks}\) \(\bold{kohavektori}\) \(\bold{abil}\).
+      </div>
+      <div class="tekst" id="8">
+        Võrrandeid <br />
+        \(x = a_1 + ts_1\) ,<br />
+        \(y = a_2 + ts_2\), t ∈ R,<br />
+        \(z = a_2 + ts_2\),<br />
+
+        nimetatakse sirge \(\bold{parameetrilisteks}\) \(\bold{võrranditeks}\)
+        \(\bold{koordinaatides}\).
+      </div>
+      <div class="tekst" id="9">
+        Võrrandeid <br />
+        \(\frac{x-a_1}{s1}=\frac{y-a_2}{s2}=\frac{z-a_3}{s3}\) <br />
+        nimetatakse sirge \(\bold{kanoonilisteks}\) \(\bold{võrranditeks}\)
+        ruumis E3.
+      </div>
+      <div class="tekst" id="10">
+        Sirge võrranditeks üldkujul ehk üldkujulisteks võrranditeks nimetatakse
+        süsteemi <br />
+        \(A_1x + B_1y + C_1z + D_1 = 0\) , <br />
+        \(A_2x + B_2y + C_2z + D_2 = 0\)<br />
+        kus sirge sihivektor s avaldub antud kahe tasandi normaalvektori
+        \(n_1=(A_1, B_1, C_1)\) ja \(n_2=(A_2, B_2, C_2)\) vektorkorrutisena:
+        <br />
+        \(s = n_1 × n_2.\)
+      </div>
+      <div class="tekst" id="11">
+        Punkti P \(\bold{kauguseks}\) sirgest l nimetame sellest punktist
+        sirgeni tõmmatud ristlõigu pikkust. Tähistame seda d(P, l). <br />
+        Punkti P ∈ \(E_3\) kaugus sirgest l ⊂ \(E_3\) arvutatakse valemiga
+        <br /><br />
+        \(d(P, l) = \frac{|AP × s|}{|s|}\), <br /><br />
+
+        kus A on suvaline punkt sirgel l ja s on sirge sihivektor
+      </div>
+      <div class="tekst" id="12">
+        Punkti P kauguseks tasandist π nimetatakse sellest punktist tasandini
+        tõmmatud ristlõigu pikkust. Tähistame seda d(P, π).<br />
+        Punkti P ∈ \(E_3\) kaugus sirgest π ⊂ \(E_3\) arvutatakse valemiga
+        <br /><br />
+        \(d(P, π) = \frac{|⟨AP, n⟩|}{|n|}\), <br /><br />
+
+        kus A on suvaline punkt tasandil π ja n on tasandi normaalvektor.
+      </div>
+      <div class="tekst" id="13">
+        Sirgete \(l_1\) ja \(l_2\) vaheliseks nurgaks nimetatakse nende sirgete
+        sihivektorite \(s_1\) ja \(s_2\) ning \(s_1\) ja \(-s_2\) vahelistest
+        nurkadest vähimat ehk <br /><br />
+        \(∠(l_1, l_2) = min{∠(s_1, s_2), ∠(s_1, −s_2)}.\) <br /><br />
+        Siis \(∠(l_1, l_2) ∈[0, \frac{π}{2}]\), sest \(∠(s_1, s_2) + ∠(s_1,
+        −s_2) = π\) <br /><br />
+        Sirgete \(l_1\) ja \(l_2\) vahelise nurga koosinus leitakse valemiga<br /><br />
+
+        \(cos(∠(l_1, l_2)) = \frac{|⟨s_1, s_2⟩|}{|s1||s2|}\),<br /><br />
+        kus \(s_1\) on sirge \(l_1\) ja \(s_2\) on sirge \(l_2\) sihivektor.
+      </div>
+      <div class="tekst" id="14">
+        Tasandite \(π_1\) ja \(π_2\) vaheliseks nurgaks nimetatakse nende
+        tasandite normaalvektorite \(n_1\) ja \(n_2\) ning \(n_1\) ja \(-n_2\)
+        vahelistest nurkadest vähimat ehk <br /><br />
+        \(∠(π_1, π_2) = min{∠(n_1, n_2), ∠(n_1, −n_2)}.\) <br /><br />
+        Siis \(∠(π_1, π_2) ∈ [0, \frac{π}{2}]\), <br /><br />
+        Tasandite \(π_1\) ja \(π_2\) vahelise nurga koosinus leitakse valemiga
+        \(cos(∠(π_1, π_2)) = \frac{|⟨n_1, n_2⟩|}{|n1||n2|}\),<br /><br />
+        kus \(n_1\) on tasandi \(π_1\) ja \(n_1\) on tasandi \(π_2\)
+        normaalvektor
+      </div>
+      <div class="tekst" id="15">
+        Sirge l ja tasandi π vaheliseks nurgaks nimetatakse sirge l ja tema
+        ristprojektsiooni l′ vahelist nurka ning seda tähistatakse ∠(l, π).
+        <br /><br />
+        Sirge l ja tasandi π vahelise nurga siinus leitakse valemiga<br /><br />
+        \(sin(∠(l, π)) = \frac{|⟨s, n⟩|}{|s||n|}\),<br /><br />
+        kus s on sirge l sihivektor ja n on tasandi π normaalvektor.
+      </div>
+    </div>
+
+    <script src="nupud.js"></script>
+  </body>
+</html>

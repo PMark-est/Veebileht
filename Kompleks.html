@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
+      integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"
+      integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+    <title>Kompleksarvud</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>MafHelp</h1>
+      <div class="navDB">
+        <div class="navB">
+          <button class="navTeema">Vektorid & tasandid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Vektorid.html'"
+            >
+              Vektorid ruumis
+            </button>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Tasandid.html'"
+            >
+              Sirge & tasand ruumis
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Kompleksarvud</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Kompleks.html'"
+            >
+              Trigonomeetriline- & Algebraline & Eksponentkuju
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Funktsioonid</button>
+          <div>
+            <button class="navAlaTeema">Funktsioonid</button>
+            <button class="navAlaTeema">Piirväärtus & pidevus</button>
+            <button class="navAlaTeema">Tuletis & Diferentsiaal</button>
+            <button class="navAlaTeema">Funktsiooni uurimine</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Integraal</button>
+          <div>
+            <button class="navAlaTeema">Algfunktsioon</button>
+            <button class="navAlaTeema">Diferentsiaal-võrrandid</button>
+            <button class="navAlaTeema">Pindala</button>
+            <button class="navAlaTeema">Määratud integraal</button>
+            <button class="navAlaTeema">Rakendused</button>
+            <button class="navAlaTeema">Päratud integraalid</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Maatriksid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Maatriksid.html'"
+            >
+              Maatriksid & Determinandid
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sisuNupud">
+      <button type="button" class="btn" id="1" onclick="reply_click(this.id)">
+        Kompleksarv
+      </button>
+      <button type="button" class="btn" id="2" onclick="reply_click(this.id)">
+        Imaginaarühik
+      </button>
+      <button type="button" class="btn" id="3" onclick="reply_click(this.id)">
+        Puntimaginaararv
+      </button>
+      <button type="button" class="btn" id="4" onclick="reply_click(this.id)">
+        Algebraline kuju
+      </button>
+      <button type="button" class="btn" id="5" onclick="reply_click(this.id)">
+        Komleksarvu moodul
+      </button>
+      <button type="button" class="btn" id="6" onclick="reply_click(this.id)">
+        Kaaskompleksar
+      </button>
+      <button type="button" class="btn" id="7" onclick="reply_click(this.id)">
+        Võrdumine, summa, vahe, korrutis ja jagatis
+      </button>
+      <button type="button" class="btn" id="8" onclick="reply_click(this.id)">
+        Trigonomeetriline kuju
+      </button>
+      <button type="button" class="btn" id="9" onclick="reply_click(this.id)">
+        Trigonomeetriline kujul võrdsus
+      </button>
+      <button type="button" class="btn" id="10" onclick="reply_click(this.id)">
+        Tehted trigonomeetriline kujul
+      </button>
+      <button type="button" class="btn" id="11" onclick="reply_click(this.id)">
+        de Moivre’i valem
+      </button>
+      <button type="button" class="btn" id="12" onclick="reply_click(this.id)">
+        n-astme juur
+      </button>
+      <button type="button" class="btn" id="14" onclick="reply_click(this.id)">
+        Euleri valem
+      </button>
+      <button type="button" class="btn" id="15" onclick="reply_click(this.id)">
+        Eksponentkuju
+      </button>
+      <button type="button" class="btn" id="16" onclick="reply_click(this.id)">
+        Tehted eksponentkujul
+      </button>
+    </div>
+    <div class="sisuTekst">
+      <div class="tekst" id="1">
+        \(\bold{Kompleksarvuks}\) nimetatakse avaldist <br />
+        \(z = a + b i\), <br />
+        kus a ja b on reaalarvud ning i on imaginaarühik. Esimest liidetavat
+        nimetatakse kompleksarvu reaalosaks <br />
+        (a = Re z) ja teist liidetavat b i kompleksarvu imaginaarosaks, kus b on
+        imaginaarosa kordaja (b = Im z).<br /><br /><br />
+        <img src="Capture3.PNG" alt="I" />
+      </div>
+      <div class="tekst" id="3">
+        Kui kompleksarvu \(z = a + b i\) reaalosa on null, s.o kui a = 0, siis
+        kompleksarvu kujul \(z = b i\) nimetatakse puntimaginaararvuks. Kõigi
+        kompleksarvude hulka tähistatakse sümboliga \( C\).
+      </div>
+      <div class="tekst" id="2">
+        Kompleksarvu i, mille korral kehtib \( i^2 \) = −1, nimetatakse
+        \(\bold{imaginaarühikuks}\)
+      </div>
+      <div class="tekst" id="4">
+        Kompleksarvu z esitusviisi \(z = a + b i\), kus a, b ∈ R, nimetatakse
+        kompleksarvu z \(\bold{algebraliseks}\) (ka Descartes’i)
+        \(\bold{kujuks}\).
+      </div>
+      <div class="tekst" id="5">
+        Kompleksarvu z = a + b i \(\bold{mooduliks}\) nimetatakse reaalarvu |z|,
+        mis on määratud võrdusega <br />
+        |z| = \(\sqrt{a^2 + b^2}\)
+      </div>
+      <div class="tekst" id="6">
+        Kompleksarvu \(z = a + b i\) \(\bold{kaaskompleksarvuks}\)
+        (kaaskompleksiks) nimetatakse kompleksarvu \(\overline{z} = a - b i\)
+      </div>
+      <div class="tekst" id="7">
+        Olgu antud kompleksarvud \(z_1 = a_1 + b_1 i\) ja \(z_2 = a_2 + b_2 i\).
+        Siis nende võrdumine, summa, vahe, korrutis ja jagatis defineeritakse
+        järgnevalt: <br />
+        1. \(z_1 = z_2 \) parajasti siis, kui \(a_1 = a_2 \)ja \(b_1 = b_2 \)
+        <br />
+        2. \(z_1 + z_2 \) = (\(a_1 ± a_2 \)) + (\(b_1 ± b_2 \))i<br />
+        3. \(z_1 z_2 \)= (\(a_1 a_2 - b_1 b_2 \)) + (\(a_1 b_2 - b_2 b_1 \))i
+        <br />
+        4. \(\frac{z_1}{z_2}\) = \(\frac{z_1 \overline{z_2}}{|z_2|^2}\), kui
+        \(z_2\) ̸= 0
+      </div>
+      <div class="tekst" id="8">
+        Avaldist <br />
+        z = r (cos φ + i sin φ) <br />
+        nimetatakse kompleksarvu z \(\bold{trigonomeetriliseks}\)
+        \(\bold{kujuks}\), kus reaalarv r on kompleksarvu z moodul |z|, reaalarv
+        φ on kompleksarvu z argument, mida tähistatakse φ = arg z.
+      </div>
+      <div class="tekst" id="9">
+        Kaks trigonomeetrilisel kujul antud kompleksarvu \(z_1 = r_1 (\cos{φ_1}
+        + \sin{φ_1}) \) ja \(z_2 = r_2 (\cos{φ_2} + \sin{φ_2}) \) on võrdsed
+        parajasti siis, kui <br />
+        1. nende moodulid on võrdsed (\( r_1 = r_2\)), <br />
+        2. nende argumentide vahe on 2π kordne, s.t \(φ_1 − φ_2 = 2kπ\), k ∈ Z.
+      </div>
+      <div class="tekst" id="10">
+        Olgu antud kaks kompleksarvu trigonomeetrilisel kujul <br />
+        \(z_1 = r_1 (\cos{φ_1} + \sin{φ_1}) \) ja \(z_2 = r_2 (\cos{φ_2} +
+        \sin{φ_2}) \)<br />
+        Siis kahe kompleksarvu korrutamise ja jagamise kohta kehtivad järgmised
+        reeglid:<br />
+        1. korrutamisel moodulid korrutatakse ja argumendid liidetakse,<br />
+        \(z_1 z_2= r_1 r_2 [\cos{(φ_1 + φ_2)} + i\sin{(φ_1 + φ_2)}] \) ,<br />
+        2. jagamisel moodulid jagatakse ja argumendid lahutatakse,<br />
+        \(\frac{z_1}{z_2} = \frac{r_1}{r_2} [\cos{(φ_1 + φ_2)} + i\sin{(φ_1 +
+        φ_2)}] \), , kui \(r_2\) ̸= 0
+      </div>
+      <div class="tekst" id="11">
+        Kompleksarvu täisarvulisel astendamisel kehtib \(\bold{de}\)
+        \(\bold{Moivre’i}\) valem <br />
+        \(z^k = r^k (\cos{k φ} + i\sin{k φ}) \), k ∈ Z, kus <br />
+        kus \(z = r (\cos{φ} + i\sin{φ}) \) ja iga kompleksarvu z korral on
+        defineeritud <br />
+        \(z^0 = 1\)
+      </div>
+      <div class="tekst" id="12">
+        Kompleksarvu z \(\bold{n-astme}\) \(\bold{juureks}\) nimetatakse iga
+        kompleksarvu w, mille korral \(w^n = z\) <br />
+
+        Igal kompleksarvul r(cos φ + isin φ) ̸= 0 on n erinevat n-astme juurt,
+        mis avalduvad kujul <br />
+        \(\sqrt[n]{r} = \cos(\frac{φ + 2kπ}{n}) + i\sin(\frac{φ + 2kπ}{n})\),
+        <br />
+        k = 0, 1, . . . , n − 1.
+      </div>
+      <div class="tekst" id="14">
+        Trigonomeetrilisi funktsioone ja eksponentfunktsiooni seob
+        \(\bold{Euleri}\) \(\bold{valem}\) <br />
+        \(e^{iφ} = \cos{φ} + i\sin{φ}\), <br />
+        kus φ on reaalarvuline muutuja ja e ≈ 2.71828 on naturaallogaritmi alus.
+      </div>
+      <div class="tekst" id="15">
+        Kompleksarvu z \(\bold{eksponentkujuks}\) nimetatakse esitust <br />
+        \(z = r e^{iφ}\) <br />
+        kus r on kompleksarvu z moodul ja φ argument.
+      </div>
+      <div class="tekst" id="16">
+        Olgu antud kaks kompleksarvu eksponentkujul \(z_1 = r_1 e^{iφ_1}\) ja
+        \(z_2 = r_2 e^{iφ_2}\). . Siis kehtivad järgmised võrdused: <br />
+        1. \(z_1 z_2 = r_1 r_2 e^{i(φ_1 + φ_2)}\)<br />
+        2. \(\frac{z_1}{z_2} = \frac{r_1}{r_2} e^{i(φ_1 + φ_2)}\), \(r_2\) ̸=
+        0,<br />
+        3. \(z^n = r^n e^{i n φ}\) , n ∈ \(\Z\)<br />
+        4. \(\sqrt[n]{z} = \sqrt[n]{r} e^{\frac{φ + 2kπ}{n}}\), k = 0, 1, . . .
+        , n − 1.
+      </div>
+    </div>
+
+    <script src="nupud.js"></script>
+  </body>
+</html>

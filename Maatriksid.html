@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <title>Maatriksid</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>MafHelp</h1>
+      <div class="navDB">
+        <div class="navB">
+          <button class="navTeema">Vektorid & tasandid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Vektorid.html'"
+            >
+              Vektorid ruumis
+            </button>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Tasandid.html'"
+            >
+              Sirge & tasand ruumis
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Kompleksarvud</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Kompleks.html'"
+            >
+              Trigonomeetriline- & Algebraline & Eksponentkuju
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Funktsioonid</button>
+          <div>
+            <button class="navAlaTeema">Funktsioonid</button>
+            <button class="navAlaTeema">Piirväärtus & pidevus</button>
+            <button class="navAlaTeema">Tuletis & Diferentsiaal</button>
+            <button class="navAlaTeema">Funktsiooni uurimine</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Integraal</button>
+          <div>
+            <button class="navAlaTeema">Algfunktsioon</button>
+            <button class="navAlaTeema">Diferentsiaal-võrrandid</button>
+            <button class="navAlaTeema">Pindala</button>
+            <button class="navAlaTeema">Määratud integraal</button>
+            <button class="navAlaTeema">Rakendused</button>
+            <button class="navAlaTeema">Päratud integraalid</button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Maatriksid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Maatriksid.html'"
+            >
+              Maatriksid & Determinandid
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sisuNupud">
+      <button type="button" class="btn" id="1" onClick="reply_click(this.id)">
+        Maatriks
+      </button>
+      <button type="button" class="btn" id="2" onClick="reply_click(this.id)">
+        Ruutmaatriks & Vektor
+      </button>
+      <button type="button" class="btn" id="3" onClick="reply_click(this.id)">
+        Maatriksite võrdsus
+      </button>
+      <button type="button" class="btn" id="4" onClick="reply_click(this.id)">
+        Maatriksite summa
+      </button>
+      <button type="button" class="btn" id="5" onClick="reply_click(this.id)">
+        Maatriksite vahe
+      </button>
+      <button type="button" class="btn" id="6" onClick="reply_click(this.id)">
+        Maatriksi korrutis skalaariga
+      </button>
+      <button type="button" class="btn" id="7" onClick="reply_click(this.id)">
+        Nullmaatriks
+      </button>
+      <button type="button" class="btn" id="8" onClick="reply_click(this.id)">
+        Transponeeritud maatriks
+      </button>
+      <button type="button" class="btn" id="9" onClick="reply_click(this.id)">
+        Maatriksite korrutis
+      </button>
+      <button type="button" class="btn" id="10" onClick="reply_click(this.id)">
+        Elemendile vastav miinor
+      </button>
+      <button type="button" class="btn" id="11" onClick="reply_click(this.id)">
+        Determinandi arendamine
+      </button>
+    </div>
+    <div class="sisuTekst">
+      <div class="tekst" id="1">
+        <b>Maatriksiks</b> nimetatakse ümarsulgude vahele paigutatud m reast ja
+        n veerust koosnevat ristkülikukujulist arvude tabelit <br />
+        $$ \begin{pmatrix} a_{11} & a_{12} & ... & a_{1n} \\ a_{21} & a_{22} &
+        ... & a_{2n} \\ ... & ... & ... & ... \\ a_{m1} & a_{m2} & ... & a_{mn}
+        \end{pmatrix} $$ kus arve \(a_{ij}\) nimetatakse maatriksi
+        <b>elementideks</b>, \(i=1,...,m\) ja \(j=1,...,n\). Sellisel juhul
+        räägitakse <b>\(\bf m\times n\) maatriksist</b>.
+        <br />
+        <br />
+        Maatriksi elemendi \(a_{ij}\) esimene indeks \(i\) näitab rida ja teine
+        indeks \(j\) näitab veergu, milles element asetseb.
+        <br />
+        Lühidalt saab maatriksi esitada kujul $$A_{m\times n} =
+        (a_{ij})_{m\times n}$$ Või veelgi lühemalt $$A=(a_{ij})$$
+      </div>
+      <div class="tekst" id="2">
+        Kui maatriksi ridade ja veergude arv on võrdne, \(m=n\), siis nimetame
+        maatriksit <b>ruutmaatriksiks</b> või ka
+        <b>\(\bf n\)-järku ruutmaatriksiks</b>. Vaatleme 3. järku
+        ruutmaatriksit. $$ \begin{pmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9
+        \end{pmatrix} $$
+        <br />
+        Kui maatriksis on täpselt üks rida või veerg, siis nimetame seda
+        maatriksit ka <b>vektoriks</b>, täpsemalt <b>reavektoriks</b> ja
+        <b>veeruvektoriks</b>. Üldine \(m\times n\) maatriks koosneb m
+        reavektoris ja n veeruvektorist.
+        <br />
+        Vaatleme vastavalt reavektorit ja veeruvektorit
+      </div>
+      <div class="tekst" id="3">
+        Maatrikseid A ja B nimetatakse <b>võrdseteks</b>, kui neil on võrdne
+        ridade arv, võrdne veergude arv ja kõik vastavatel kohtadel olevad
+        elemendid on võrdsed.
+        <br />
+        <br />
+        \(A=B\), kui \(a_{ij} = b_{ij}\) iga \(i=1,...,m\) ja \(j=1,...,n\)
+        korral.
+        <br />
+        <br />
+        Näiteks maatriksid
+        <br />
+        $$A=\begin{pmatrix} 7 & 11 \\ 0 & 6 \end{pmatrix},\ B=\begin{pmatrix} 7
+        & 11 \\ 0 & 6 \end{pmatrix}, \ C=\begin{pmatrix} 7 & 11 & 0 \\ 0 & 6 & 0
+        \end{pmatrix} $$ A ja B on võrdsed, kuid A ja C ega B ja C ei ole.
+      </div>
+      <div class="tekst" id="4">
+        Kui maatriksid A ja B on mõlemad \(m\times n\) maatriksid, siis A ja B
+        <b>summaks</b> nimetatakse \(m\times n\) maatriksit C, mille
+        elementideks on vastavate elementide summad.
+        <br />
+        <br />
+        \(C=A+B\), kui \(c_{ij} = a_{ij} + b_{ij}\), \(i=1,...,m\),
+        \(j=1,...,n\)
+        <br />
+        <br />
+        Toome näite maatriksite liitmisest $$ \begin{pmatrix} 1 & 0 \\ 21 & 17
+        \end{pmatrix} + \begin{pmatrix} 3 & 7 \\ 4 & 6 \end{pmatrix} =
+        \begin{pmatrix} 1+3 & 0+7 \\ 21+4 & 17+6 \end{pmatrix} $$ $$
+        \begin{pmatrix} 1 & 0 \\ 21 & 17 \end{pmatrix} + \begin{pmatrix} 3 & 7 &
+        5 \\ 4 & 6 & 11 \end{pmatrix} \neq$$
+        <br />
+        Olgu A,B,C ja nullmaatriks O kõik \(m\times n\) maatriksid.
+        <br />
+        Maatriksite liitmisel kehtivad järgmised omadused:
+        <br />
+        <br />
+        \((A+B)+C=A+(B+C)\)
+        <br />
+        \(A+B=B+A\)
+        <br />
+        \(A+O=A\)
+      </div>
+      <div class="tekst" id="5">
+        Kui maatriksid A ja B on mõlemad \(m\times n\) maatriksid, siis A ja B
+        <b>vaheks</b> nimetatakse \(m\times n\) maatriksit C, mille elementideks
+        on vastavate elementide vahed.
+        <br />
+        <br />
+        \(C=A-B\), kui \(c_{ij} = a_{ij} - b_{ij}\), \(i=1,...,m\),
+        \(j=1,...,n\)
+        <br />
+        <br />
+        Toome näite maatriksite lahutamisest $$ \begin{pmatrix} 1 & 0 \\ 21 & 17
+        \end{pmatrix} - \begin{pmatrix} 3 & 7 \\ 4 & 6 \end{pmatrix} =
+        \begin{pmatrix} 1-3 & 0-7 \\ 21-4 & 17-6 \end{pmatrix} $$
+      </div>
+      <div class="tekst" id="6">
+        Maatriksi <b>korrutiseks skalaariga</b> ehk arvuga \(\lambda\)
+        nimetatakse maatriksit \(\lambda A = B\), mille elemendid saadakse
+        maatriksi A kõigi elementide korrutamisel arvuga \(\lambda\)
+        <br />
+        <br />
+        \(\lambda A = B = (b_{ij}\), kui \(\lambda a_{ij} = b_{ij}\),
+        \(i=1,..,m,\ j=1,...,n\)
+        <br />
+        <br />
+        Olgu $$A = \begin{pmatrix} 3 & -5 & 8 \\ 2 & 9 & 0 \end{pmatrix} $$ Siis
+        näiteks \(1.5\times A\) oleks $$1.5A = \begin{pmatrix} 1.5\times 3 &
+        1.5\times -5 & 1.5\times 8 \\ 1.5\times 2 & 1.5\times 9 & 1.5\times 0
+        \end{pmatrix}$$
+        <br />
+        Skalaariga korrutamisel kehtib järgmine omadus:
+        <br />
+        \(\lambda (A+B) = \lambda A + \lambda B\),
+        <br />
+        <br />
+        Kus A ja B on \(m\times n\) maatriksid
+      </div>
+      <div class="tekst" id="7">
+        <b>Nullmaatriksiks</b> nimetatakse maatriksit, mille kõik elemendid
+        võrduvad nullgia $$O = \begin{pmatrix} 0 & 0 & ... & 0 \\ ... & ... &
+        ... & ... \\ 0 & 0 & ... & 0\end{pmatrix}$$ \(a_{ij}=0, i=1,...,m, \
+        j=1,...n\).
+        <br />
+        <br />
+        Nullmaatriksit tähistatkse sageli ka sümboliga \(\theta\)
+      </div>
+      <div class="tekst" id="8">
+        Maatriksi \(A=(a_{ij}),\ (i=1,...m, \ j=1,...,n)\)
+        <b>transponeeritud maatriksiks</b> nimetatakse maatriksit \(A^T\), mis
+        saadakse maatriksi A ridade ja veergude äravahetamisel $$A^T = (a_{ji}),
+        \ i=1,...,m, \ j=1,...,n.$$ Olgu $$A = \begin{pmatrix} 1 & 2 & 3 \\ 4 &
+        5 & 6 \end{pmatrix}$$ Siis $$A^T = \begin{pmatrix} 1 & 4 \\ 2 & 5 \\ 3 &
+        6 \end{pmatrix}$$ Olgu A ja B mõlemad \(m\times n\) maatriksid ning
+        \(\lambda \in \mathbb{R}\), siis kehtivad järgmised omadused:
+        <br />
+        <br />
+        \((A^T)^T = A\)
+        <br />
+        \((A+B)^T = A^T + B^T\)
+        <br />
+        \((\lambda A)^T = \lambda A^T\)
+      </div>
+      <div class="tekst" id="9">
+        Kui maatriksi A veergude arv võrdub maatriksi B ridade arvuga, siis
+        maatriksite A ja B <b>korrutiseks</b> AB nimetatakse maatriksit C, mille
+        i-nda rea ja j-nda veeru elemendi \(c_{ij}\) saamiseks korrtutakse
+        maatriksi A i-nda rea elemendid maatriksi B j-nda veeru vastavate
+        elementidega ning saadud korrutised liidetakse. $$C=
+        \sum_{k=1}^{n}a_{ik}b_{kj} = a_{i1}b_{1j} + a_{i2}b_{2j} + ... +
+        a_{in}b_{jn},$$ kus \(i=1,...,m\) ja \(j=1,...,p\), A on \(m\times n\)
+        maatriks ja B on \(n\times p\) maatriks. Olgu $$A = \begin{pmatrix} 3 &
+        7 & 2 \\ 5 & 9 & 11 \end{pmatrix} \text{ ja } B = \begin{pmatrix} -5 \\
+        2 \\ 3\end{pmatrix}.$$ Korrutis AB oleks $$ AB = \begin{pmatrix} 3\times
+        -5 + 7\times 2 + 2\times 3 \\ 5\times -5 + 9\times 2 + 11\times 3
+        \end{pmatrix} $$ Üldjuhul \(AB \neq BA\)
+      </div>
+      <div class="tekst" id="10">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error
+        veritatis ut harum voluptatum ipsa labore debitis nisi, quis velit,
+        recusandae quo corporis deserunt saepe iure sed iusto molestias id
+        possimus ducimus. Accusantium unde totam quam quae, odit magnam facere
+        quos iusto molestias corporis ipsam molestiae sit dolorem magni
+        doloribus?
+      </div>
+      <div class="tekst" id="11">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+        consequuntur omnis consectetur, repellat labore sunt minima dignissimos,
+        cum quam aperiam excepturi tenetur totam. Nisi, soluta.
+      </div>
+      <div class="tekst" id="12">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error
+        veritatis ut harum voluptatum ipsa labore debitis nisi, quis velit,
+        recusandae quo corporis deserunt saepe iure sed iusto molestias id
+        possimus ducimus. Accusantium unde totam quam quae, odit magnam facere
+        quos iusto molestias corporis ipsam molestiae sit dolorem magni
+        doloribus?
+      </div>
+      <div class="tekst" id="13">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+        consequuntur omnis consectetur, repellat labore sunt minima dignissimos,
+        cum quam aperiam excepturi tenetur totam. Nisi, soluta.
+      </div>
+      <div class="tekst" id="14">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error
+        veritatis ut harum voluptatum ipsa labore debitis nisi, quis velit,
+        recusandae quo corporis deserunt saepe iure sed iusto molestias id
+        possimus ducimus. Accusantium unde totam quam quae, odit magnam facere
+        quos iusto molestias corporis ipsam molestiae sit dolorem magni
+        doloribus?
+      </div>
+      <div class="tekst" id="15">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+        consequuntur omnis consectetur, repellat labore sunt minima dignissimos,
+        cum quam aperiam excepturi tenetur totam. Nisi, soluta.
+      </div>
+    </div>
+    <script src="nupud.js"></script>
+  </body>
+</html>
