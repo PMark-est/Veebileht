@@ -135,7 +135,7 @@
         Olgu <i>a</i> funktsiooni <i>f</i> määramispiirkonna <i>X</i> kuhjumispunkt. Reaalarvu
         <i>A</i> nimetatakse funktsiooni <i>f</i> <b>piirväärtuseks</b> punktis <i>a</i> ja kirjutatakse
         <br>
-        $$\(lim\limits_x→a)$$ <i>f(x) = A</i>
+        \(lim_{x\rightarrow a} f(x) = a\)
         <br>
         kui punktile <i>a</i> piisavalt lähedastes määramispiirkonna <i>X</i> punktides <i>x</i>
         (välja arvatud, võib-olla, punktis a eneses) erinevad vastavad funktsiooni väärtused <i>f(x)</i> arvust <i>A</i> kuitahes vähe.
@@ -146,14 +146,14 @@
         kasvamise. Sel juhul kirjutame
         <br>
         <br>
-        $$\(lim\limits_x→a)$$ <i>f(x) = ∞</i>
+        \(lim_{x\rightarrow a} f(x) = ∞\)
         <br>
         <br>
         Kui aga protsessis <i>x → a</i> toimub <i>f(x)</i> tõkestamatu kahanemine, siis
         ütleme, et funktsioonil <i>f</i> on selles protsessis piirväärtus −∞ ja kirjutame
         <br>
         <br>
-        $$\(lim\limits_x→a)$$ <i>f(x) = -∞</i>
+        \(lim_{x\rightarrow a} f(x) = -∞\)
       
       </div>
       <div class="tekst" id="2">
@@ -162,22 +162,22 @@
         piirväärtus. Tähistame
         <br>
         <br>
-        $$\(lim\limits_x→a+)$$ <i>f(x)</i>   (või f(a+))
+        \(lim_{x\rightarrow a+} f(x)\)   (või f(a+))
         <br>
         <br>
         <i>x → a, x < a</i>, lähenemine toimub vasakult, s.o vasakpoolne
         piirväärtus. Tähistame
         <br>
         <br>
-        $$\(lim\limits_x→a-)$$ <i>f(x)</i>   (või f(a-))
+        \(lim_{x\rightarrow a-} f(x)\)   (või f(a-))
         <br>
         <br>
-        Kui eksisteerivad ühepoolsed piirväärtused $$\(lim\limits_x→a+)$$ <i>f(x)</i> ja $$\(lim\limits_x→a-)$$ <i>f(x)</i>
-        siis (nn. kahepoolne) piirväärtus $$\(lim\limits_x→a)$$ <i>f(x) = A</i> eksisteerib parajasti
+        Kui eksisteerivad ühepoolsed piirväärtused \(lim_{x\rightarrow a+} f(x)\) ja (lim_{x\rightarrow a-} f(x)\)
+        siis (nn. kahepoolne) piirväärtus \(lim_{x\rightarrow a} f(x) = a\) eksisteerib parajasti
         siis, kui
         <br>
         <br>
-        $$\(lim\limits_x→a+)$$ <i>f(x)</i> = $$\(lim\limits_x→a-)$$ <i>f(x)</i> = <i>A</i>
+        \(lim_{x\rightarrow a+} f(x)\) = (lim_{x\rightarrow a-} f(x)\) = <i>A</i>
         <br>
         <br>
         <b>Piirväärtuse ühesus</b>. Vaadeldavas protsessis (kas ühe- või kahepoolses) saab funktsioonil olla ainult üks piirväärtus
@@ -189,60 +189,61 @@
         Kui funktsioon <i>f</i> on tõkestatud punkti <i>a</i> mingis ümbruses
         <br>
         <br>
-        $$\(lim\limits_x→a)$$ <i>g(x) = 0</i>
+        (lim_{x\rightarrow a} g(x) = 0\)
         <br>
         siis
         <br>
-        $$\(lim\limits_x→a)$$ <i>[f(x)g(x)] = 0</i>
+        (lim_{x\rightarrow a} [f(x)g(x)] = 0\)
       </div>
       <div class="tekst" id="4">
         Kui on olemas <b>lõplikud</b> piirväärtused
         <br>
         <br>
-        $$\(lim\limits_x→a)$$ <i>f(x) = A</i> ja $$\(lim\limits_x→a)$$ <i>fgx) = A</i>
+        \(lim_{x\rightarrow a} f(x) = A\) ja \(lim_{x\rightarrow a} g(x) = A\)
         <br>
         <br>
         siis kehtivad järgmised tehetega seotud omadused:
         <br>
         <br>
-        1. $$\(lim\limits_x→a)$$ <i>[f(x)$$\(pm)$$g(x)]</i> = <i>A$$ \(pm) $$B</i>
+        1. \(lim_{x\rightarrow a} [f(x) ± g(x)] = A ± B\)
         <br>
-        2. $$\(lim\limits_x→a)$$ <i>[cf(x)] = cA, c ∈ $\mathbb{R}$</i>
+        2. \(lim_{x\rightarrow a} [cf(x)] = cA, c ∈ Realarvudesse
         <br>
-        3. $$\(lim\limits_x→a)$$ <i>[f(x)g(x)] = AB</i>
+        3. \(lim_{x\rightarrow a} [f(x)g(x)] = AB\)
         <br>
-        4. $$\(lim\limits_x→a)$$ $$\frac{f(x)}{g(x)}$$ = \frac{A}{B}
+        4. \(lim_{x\rightarrow a}\) \(\frac{f(x)}{g(x)}\) = \(\frac{a}{b)}\)
       </div>
       <div class="tekst" id="5">
         <b>Kahepoolse tõkke omadus</b>. Kui kehtivad võrratused
         <br>
         <br>
-        <i>f(x) ≤ g(x) ≤ h(x), x ∈ (a − δ, a) ∪ (a, a + δ)</i>
+        <i>f(x) ≤ g(x) ≤ h(x), x ∈ (a - δ, a) \(\bigcup\) (a, a + δ)</i>
         <br>
         <br>
         ja on olemas lõplikud piirväärtused
         <br>
         <br>
-        $$\(lim\limits_x→a)$$ <i>f(x)</i> = $$\(lim\limits_x→a)$$ <i>h(x)</i> = <i>A</i>
+        \(lim_{x\rightarrow a} f(x)\) = \(lim_{x\rightarrow a} h(x)\) = <i>A</i>
         <br>
         <br>
-        siis on olemas ka piirväärtus $$\(lim\limits_x→a)$$ <i>g(x)</i> ning $$\(lim\limits_x→a)$$ <i>g(x) = A</i>
-      </div>ˇ
+        siis on olemas ka piirväärtus \(lim_{x\rightarrow a} g(x)\) ning<br>
+        \(lim_{x\rightarrow a} g(x) = A\)
+      </div>
       <div class="tekst" id="6">
         <b>Teoreem elementaarfunktsioonide piirväärtustest</b>. Kui <i>f</i> on elementaarfunktsioon ja punkt <i>a</i> kuulub tema määramispiirkonda, siis
-        $$\(lim\limits_x→a)$$ <i>f(f) = f(a)</i>
+        \(lim_{x\rightarrow a} f(x) = f(a)\)
       </div>
       <div class="tekst" id="7">
         Kehtib valem
         <br>
         <br>
-        $$\(lim\limits_x→a)$$ $$\frac{sin x}{x}$$ = 1
+        \(lim_{x\rightarrow a}\) \(\frac{sin x}{x}\) = 1
         <br>
         <br>
         Eksisteerib piirväärtus
         <br>
         <br>
-        $$\(lim\limits_x→a)$$ (1 + $$\frac{1}{x}$$)<sup>x</sup> = e
+        \(lim_{x\rightarrow a}\) \(\frac{1}{x}\) = e
         <br>
         Arv e on irratsionaalarv ja e = 2, 7182818 . . . . Tähis e on kasutusel üldlevinult.
         <br>
@@ -250,26 +251,26 @@
         Kehtib
         <br>
         <br>
-        $$\(lim\limits_n→∞)$$ $$\sqrt[n]{n}$$ = 1
+        \(lim_{x\rightarrow ∞}\) \(\sqrt[n]{x}\) = 1
       </div>
       <div class="tekst" id="8">
         Funktsiooni <i>f</i> nimetatakse <b>pidevaks</b> punktis <i>a</i>, kui
         <br>
         <br>
-        $$\(lim\limits_n→a)$$ <i>f(x) = f(a)</i>
+        \(lim_{n\rightarrow ∞} f(x) = f(a)\)
         <br>
         <br>
         Selleks, et funktsioon oleks pidev punktis <i>a</i>, peavad olema täidetud
         kõik järgmised kolm tingimust:<br>
         1. funktsioonil on olemas väärtus <i>f(a)</i><br>
         2. funktsioonil on olemas piirväärtus lim <i>f(x)</i> protsessis <i>x → a</i><br>
-        3. $$\(lim\limits_x→a)$$ <i>f(x) = f(a)</i>
+        3. \(lim_{x\rightarrow a} f(x) = f(a)\)
         <br>
         <br>
         Kui funktsioon <i>f</i> ei ole pidev punktis <i>a</i>, kuid on määratud tema ümbruses, siis öeldakse, et funktsioon <i>f</i> on <b>katkev</b> punktis <i>a</i> (punkti <i>a</i>
         nimetatakse funktsiooni <i>f</i> <b>katkevuspunktiks</b>). Katkevuspunktist <i>a</i>
         räägitakse ka siis, kui funktsioon <i>f</i> ei ole määratud punktis <i>a</i>, kuid
-        eksisteerib $$\(lim\limits_x→a)$$ <i>f(x)</i>
+        eksisteerib \(lim_{x\rightarrow a} f(x)\)
         <br>
         <br>
         Me ütleme, et funktsioon <i>f</i> on pidev hulgal <i>X</i>, kui <i>f</i> on pidev selle
@@ -284,7 +285,7 @@
         <br>
         ja
         <br>
-        $$\frac{f(x)}{g(x)}$$, kui <i>g(a) ̸= 0</i>
+        \(\frac{f(x)}{g(x)}\), kui <i>g(a) ̸= 0</i>
         <br>
         on pidevad funktsioonid punktis x = a
         <br>
