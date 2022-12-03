@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.css"
+      integrity="sha384-D+9gmBxUQogRLqvARvNLmA9hS2x//eK1FhVb9PiU86gmcrBrJAQT8okdJ4LMp2uv"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/katex.min.js"
+      integrity="sha384-483A6DwYfKeDa0Q52fJmxFXkcPCFfnXMoXblOkJ4JcA8zATN6Tm78UNL72AKk+0O"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.10.0-rc.1/dist/contrib/auto-render.min.js"
+      integrity="sha384-yACMu8JWxKzSp/C1YV86pzGiQ/l1YUfE8oPuahJQxzehAjEt2GiQuy/BIvl9KyeF"
+      crossorigin="anonymous"
+      onload="renderMathInElement(document.body);"
+    ></script>
+    <title>Maatriksid</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>MafHelp</h1>
+      <div class="navDB">
+        <div class="navB">
+          <button class="navTeema">Vektorid & tasandid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Vektorid.html'"
+            >
+              Vektorid ruumis
+            </button>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Tasandid.html'"
+            >
+              Sirge & tasand ruumis
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Kompleksarvud</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Kompleks.html'"
+            >
+              Trigonomeetriline- & Algebraline & Eksponentkuju
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Funktsioonid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              class="navAlaTeema"
+              onclick="window.location.href='Funktsioonid.html'"
+            >
+              Funktsioonid
+            </button>
+            <button
+              class="navAlaTeema"
+              class="navAlaTeema"
+              onclick="window.location.href='Piirv22rtus.html'"
+            >
+              Piirväärtus & pidevus
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Integraal</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Integraal1.html'"
+            >
+              Algfunktsioon ja määramata integraal
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Maatriksid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Maatriksid.html'"
+            >
+              Maatriksid & Determinandid
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sisuNupud">
+      <button type="button" class="btn" id="1" onClick="reply_click(this.id)">
+        Funktsiooni piirväärtus
+      </button>
+      <button type="button" class="btn" id="2" onClick="reply_click(this.id)">
+        Ühepoolsed piirväärtused
+      </button>
+      <button type="button" class="btn" id="3" onClick="reply_click(this.id)">
+        Tõkestatud funktsioon
+      </button>
+      <button type="button" class="btn" id="4" onClick="reply_click(this.id)">
+        Lõplikute piirväärtuste tehete omadused
+      </button>
+      <button type="button" class="btn" id="5" onClick="reply_click(this.id)">
+        Kahepoolse tõkke omadus
+      </button>
+      <button type="button" class="btn" id="6" onClick="reply_click(this.id)">
+        Elementaarfunktsioonide piirväärtus
+      </button>
+      <button type="button" class="btn" id="7" onClick="reply_click(this.id)">
+        Mõned erilised piirväärtused
+      </button>
+      <button type="button" class="btn" id="8" onClick="reply_click(this.id)">
+        Funktsiooni pidevus ja katkevus
+      </button>
+      <button type="button" class="btn" id="8" onClick="reply_click(this.id)">
+        Pidevuse omadused
+      </button>
+    </div>
+    <div class="sisuTekst">
+      <div class="tekst" id="1">
+        Olgu <i>a</i> funktsiooni <i>f</i> määramispiirkonna <i>X</i> kuhjumispunkt. Reaalarvu
+        <i>A</i> nimetatakse funktsiooni <i>f</i> <b>piirväärtuseks</b> punktis <i>a</i> ja kirjutatakse
+        <br>
+        $$\(lim\limits_x→a)$$ <i>f(x) = A</i>
+        <br>
+        kui punktile <i>a</i> piisavalt lähedastes määramispiirkonna <i>X</i> punktides <i>x</i>
+        (välja arvatud, võib-olla, punktis a eneses) erinevad vastavad funktsiooni väärtused <i>f(x)</i> arvust <i>A</i> kuitahes vähe.
+        <br>
+        <br>
+        Öeldakse, et funktsioonil <i>f</i> on piirväärtus ∞ protsessis <i>x → a, a ∈ R</i>,
+        kui argumendi <i>x</i> lähenemine arvule <i>a</i> toob kaasa <i>f(x)</i> tõkestamatu
+        kasvamise. Sel juhul kirjutame
+        <br>
+        <br>
+        $$\(lim\limits_x→a)$$ <i>f(x) = ∞</i>
+        <br>
+        <br>
+        Kui aga protsessis <i>x → a</i> toimub <i>f(x)</i> tõkestamatu kahanemine, siis
+        ütleme, et funktsioonil <i>f</i> on selles protsessis piirväärtus −∞ ja kirjutame
+        <br>
+        <br>
+        $$\(lim\limits_x→a)$$ <i>f(x) = -∞</i>
+      
+      </div>
+      <div class="tekst" id="2">
+        Vaatleme piirprotsesse:<br>
+        1. <i>x → a, x > a</i>, lähenemine toimub paremalt, s.o parempoolne
+        piirväärtus. Tähistame
+        <br>
+        <br>
+        $$\(lim\limits_x→a+)$$ <i>f(x)</i>   (või f(a+))
+        <br>
+        <br>
+        <i>x → a, x < a</i>, lähenemine toimub vasakult, s.o vasakpoolne
+        piirväärtus. Tähistame
+        <br>
+        <br>
+        $$\(lim\limits_x→a-)$$ <i>f(x)</i>   (või f(a-))
+        <br>
+        <br>
+        Kui eksisteerivad ühepoolsed piirväärtused $$\(lim\limits_x→a+)$$ <i>f(x)</i> ja $$\(lim\limits_x→a-)$$ <i>f(x)</i>
+        siis (nn. kahepoolne) piirväärtus $$\(lim\limits_x→a)$$ <i>f(x) = A</i> eksisteerib parajasti
+        siis, kui
+        <br>
+        <br>
+        $$\(lim\limits_x→a+)$$ <i>f(x)</i> = $$\(lim\limits_x→a-)$$ <i>f(x)</i> = <i>A</i>
+        <br>
+        <br>
+        <b>Piirväärtuse ühesus</b>. Vaadeldavas protsessis (kas ühe- või kahepoolses) saab funktsioonil olla ainult üks piirväärtus
+      </div>
+      <div class="tekst" id="3">       
+        Funktsiooni f nimetatakse tõkestatuks hulgal <i>X</i>, kui leidub arv <i>M > 0</i>
+        nii, et <i>|f(x)| ≤ M</i> iga <i>x ∈ X </i>korral
+        <br>        
+        Kui funktsioon <i>f</i> on tõkestatud punkti <i>a</i> mingis ümbruses
+        <br>
+        <br>
+        $$\(lim\limits_x→a)$$ <i>g(x) = 0</i>
+        <br>
+        siis
+        <br>
+        $$\(lim\limits_x→a)$$ <i>[f(x)g(x)] = 0</i>
+      </div>
+      <div class="tekst" id="4">
+        Kui on olemas <b>lõplikud</b> piirväärtused
+        <br>
+        <br>
+        $$\(lim\limits_x→a)$$ <i>f(x) = A</i> ja $$\(lim\limits_x→a)$$ <i>fgx) = A</i>
+        <br>
+        <br>
+        siis kehtivad järgmised tehetega seotud omadused:
+        <br>
+        <br>
+        1. $$\(lim\limits_x→a)$$ <i>[f(x)$$\(pm)$$g(x)]</i> = <i>A$$ \(pm) $$B</i>
+        <br>
+        2. $$\(lim\limits_x→a)$$ <i>[cf(x)] = cA, c ∈ $\mathbb{R}$</i>
+        <br>
+        3. $$\(lim\limits_x→a)$$ <i>[f(x)g(x)] = AB</i>
+        <br>
+        4. $$\(lim\limits_x→a)$$ $$\frac{f(x)}{g(x)}$$ = \frac{A}{B}
+      </div>
+      <div class="tekst" id="5">
+        <b>Kahepoolse tõkke omadus</b>. Kui kehtivad võrratused
+        <br>
+        <br>
+        <i>f(x) ≤ g(x) ≤ h(x), x ∈ (a − δ, a) ∪ (a, a + δ)</i>
+        <br>
+        <br>
+        ja on olemas lõplikud piirväärtused
+        <br>
+        <br>
+        $$\(lim\limits_x→a)$$ <i>f(x)</i> = $$\(lim\limits_x→a)$$ <i>h(x)</i> = <i>A</i>
+        <br>
+        <br>
+        siis on olemas ka piirväärtus $$\(lim\limits_x→a)$$ <i>g(x)</i> ning $$\(lim\limits_x→a)$$ <i>g(x) = A</i>
+      </div>ˇ
+      <div class="tekst" id="6">
+        <b>Teoreem elementaarfunktsioonide piirväärtustest</b>. Kui <i>f</i> on elementaarfunktsioon ja punkt <i>a</i> kuulub tema määramispiirkonda, siis
+        $$\(lim\limits_x→a)$$ <i>f(f) = f(a)</i>
+      </div>
+      <div class="tekst" id="7">
+        Kehtib valem
+        <br>
+        <br>
+        $$\(lim\limits_x→a)$$ $$\frac{sin x}{x}$$ = 1
+        <br>
+        <br>
+        Eksisteerib piirväärtus
+        <br>
+        <br>
+        $$\(lim\limits_x→a)$$ (1 + $$\frac{1}{x}$$)<sup>x</sup> = e
+        <br>
+        Arv e on irratsionaalarv ja e = 2, 7182818 . . . . Tähis e on kasutusel üldlevinult.
+        <br>
+        <br>
+        Kehtib
+        <br>
+        <br>
+        $$\(lim\limits_n→∞)$$ $$\sqrt[n]{n}$$ = 1
+      </div>
+      <div class="tekst" id="8">
+        Funktsiooni <i>f</i> nimetatakse <b>pidevaks</b> punktis <i>a</i>, kui
+        <br>
+        <br>
+        $$\(lim\limits_n→a)$$ <i>f(x) = f(a)</i>
+        <br>
+        <br>
+        Selleks, et funktsioon oleks pidev punktis <i>a</i>, peavad olema täidetud
+        kõik järgmised kolm tingimust:<br>
+        1. funktsioonil on olemas väärtus <i>f(a)</i><br>
+        2. funktsioonil on olemas piirväärtus lim <i>f(x)</i> protsessis <i>x → a</i><br>
+        3. $$\(lim\limits_x→a)$$ <i>f(x) = f(a)</i>
+        <br>
+        <br>
+        Kui funktsioon <i>f</i> ei ole pidev punktis <i>a</i>, kuid on määratud tema ümbruses, siis öeldakse, et funktsioon <i>f</i> on <b>katkev</b> punktis <i>a</i> (punkti <i>a</i>
+        nimetatakse funktsiooni <i>f</i> <b>katkevuspunktiks</b>). Katkevuspunktist <i>a</i>
+        räägitakse ka siis, kui funktsioon <i>f</i> ei ole määratud punktis <i>a</i>, kuid
+        eksisteerib $$\(lim\limits_x→a)$$ <i>f(x)</i>
+        <br>
+        <br>
+        Me ütleme, et funktsioon <i>f</i> on pidev hulgal <i>X</i>, kui <i>f</i> on pidev selle
+        hulga igas punktis. Kui <i>X = R</i>, siis ütleme, et funktsioon <i>f</i> on pidev
+        kõikjal.
+      </div>
+      <div class="tekst" id="9">
+        Olgu <i>f</i> ja <i>g</i> pidevad funktsioonid punktis <i>x = a</i>. Siis ka
+        <br> 
+        <br>
+        <i>f(x) ± g(x), f(x)g(x)</i>
+        <br>
+        ja
+        <br>
+        $$\frac{f(x)}{g(x)}$$, kui <i>g(a) ̸= 0</i>
+        <br>
+        on pidevad funktsioonid punktis x = a
+        <br>
+        <br>
+        Kõik elementaarfunktsioonid on pidevad oma määramispiirkonnas
+
+      </div>
+    </div>
+    <script src="nupud.js"></script>
+  </body>
+</html>

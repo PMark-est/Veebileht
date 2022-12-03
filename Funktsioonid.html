@@ -61,21 +61,31 @@
         <div class="navB">
           <button class="navTeema">Funktsioonid</button>
           <div>
-            <button class="navAlaTeema">Funktsioonid</button>
-            <button class="navAlaTeema">Piirväärtus & pidevus</button>
-            <button class="navAlaTeema">Tuletis & Diferentsiaal</button>
-            <button class="navAlaTeema">Funktsiooni uurimine</button>
+            <button
+              class="navAlaTeema"
+              class="navAlaTeema"
+              onclick="window.location.href='Funktsioonid.html'"
+            >
+              Funktsioonid
+            </button>
+            <button
+              class="navAlaTeema"
+              class="navAlaTeema"
+              onclick="window.location.href='Piirv22rtus.html'"
+            >
+              Piirväärtus & pidevus
+            </button>
           </div>
         </div>
         <div class="navB">
           <button class="navTeema">Integraal</button>
           <div>
-            <button class="navAlaTeema">Algfunktsioon</button>
-            <button class="navAlaTeema">Diferentsiaal-võrrandid</button>
-            <button class="navAlaTeema">Pindala</button>
-            <button class="navAlaTeema">Määratud integraal</button>
-            <button class="navAlaTeema">Rakendused</button>
-            <button class="navAlaTeema">Päratud integraalid</button>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Integraal1.html'"
+            >
+              Algfunktsioon ja määramata integraal
+            </button>
           </div>
         </div>
         <div class="navB">
@@ -93,177 +103,128 @@
     </div>
     <div class="sisuNupud">
       <button type="button" class="btn" id="1" onClick="reply_click(this.id)">
-        Funktsioonide põhimõiste
+        Funktsioon
       </button>
       <button type="button" class="btn" id="2" onClick="reply_click(this.id)">
-        Pöörd-, Logaritm- ning eksponentfunktsioonid
+        Paaris- ja paaritu funktsioon
       </button>
       <button type="button" class="btn" id="3" onClick="reply_click(this.id)">
-        Funktsiooni piirväärtus
+        Üksühene funktsioon
       </button>
       <button type="button" class="btn" id="4" onClick="reply_click(this.id)">
-        Pidevad- ja katkevadfunktsioonid
+        Liitfunktsioon
       </button>
       <button type="button" class="btn" id="5" onClick="reply_click(this.id)">
-        Funktsiooni tuletis
+        Pöördfunktsioon
       </button>
       <button type="button" class="btn" id="6" onClick="reply_click(this.id)">
-        Funktsiooni difrentsiaal ning ligikaudne arvutamine
-      </button>
-      <button type="button" class="btn" id="7" onClick="reply_click(this.id)">
-        Funktsiooni ekstreemumid
-      </button>
-      <button type="button" class="btn" id="8" onClick="reply_click(this.id)">
-        Funktsiooni uurimine
+        Elementaarfunktsioon
       </button>
     </div>
     <div class="sisuTekst">
       <div class="tekst" id="1">
-        Funktsiooni <b>f: X → Y</b> nimetatakse üksüheseks funktsiooniks, kui iga <b>x1, x2 ∈ X, x1 ≠ x2</b>, korral ka
-        funktsiooni väärtused on erinevad hulgas <b>Y</b> , s.t <b>f(x1) ≠ f(x2)</b>.
-        Üksühese vastavuse <b>f : X → Y</b> pöördfunktsioon 
-        <b>f<sup>-1</sup>: Y → X</b> määratakse võrdusega <b>f -1 (y) = x</b>, kus <b>f(x) = y</b> iga <b>x ∈ X</b> korral.
+        Olgu antud hulk <b>X ⊂ R</b>. Kui igale arvule <b>x ∈ X</b> on vastavusse seatud
+        üks ja ainult üks reaalarv <i>y</i>, siis öeldakse, et hulgal <i>X</i> on defineeritud
+        <b>funktsioon</b> <i>f</i>, mida märgitakse
+        <br>
+        <i>y = f(x)</i>
+        <br>
+        Elementi <i>y = f(x)</i> nimetatakse elemendi <i>x</i> kujutiseks, elementi <i>x</i> nimetatakse elemendi <i>y</i> originaaliks
         <br>
         <br>
-        Funktsiooni <b>y = f(x)</b> nimetatakse<br>
-        1. paarisfunktsiooniks määramispiirkonnas <b>X</b>, kui <b>f(-x) = f(x)</b> iga <b>x ∈ X</b> korral;<br>
-        2. paarituks funktsiooniks, kui <b>f(-x) = -f(x)</b> iga <b>x ∈ X</b> korral;<br>
-        3. perioodiliseks, kui leidub arv <b>T > 0</b> nii, et <b>f(x + T) = f(x)</b> iga <b>x ∈ X</b> korral
+        Kõikide elementide hulka <i>X</i>, mille puhul elemendile <i>x ∈ X</i> seatakse
+        funktsiooniga <i>f</i> vastavusse <i>f(x)</i>, nimetakse funktsiooni f <b>määramispiirkonnaks</b>.
+        Funktsiooni <i>f</i> kõikide väärtuste hulka
+        <br>
+        <i>{y | y = f(x), x ∈ X}
+        </i>
+        nimetatakse funktsiooni <i>f</i> <b>muutumispiirkonnaks</b> ehk väärtuste hulgaks ja seda tähistatakse <i>f(X)</i>.
+        <br>
+        <br>
+        Funktsiooni <i>f</i> <b>graafikuks</b> nimetatakse <i>xy</i>-tasandi punktide hulka
+        <i>G(f) = {(x, y)| y = f(x), x ∈ X}</i>
       </div>
       <div class="tekst" id="2">
-        Funktsiooni <b>f: X → Y</b> nimetatakse üksüheseks funktsiooniks, kui iga <b>x1, x2 ∈ X, x1 ≠ x2</b>, korral ka
-        funktsiooni väärtused on erinevad hulgas <b>Y</b> , s.t <b>f(x1) ≠ f(x2)</b>.
-        Üksühese vastavuse <b>f : X → Y</b> pöördfunktsioon 
-        <b>f<sup>-1</sup>: Y → X</b> määratakse võrdusega <b>f -1 (y) = x</b>, kus <b>f(x) = y</b> iga <b>x ∈ X</b> korral.
+        Funktsiooni <i>y = f(x)</i> nimetatakse <b>paarisfunktsiooniks</b> määramispiirkonnas <i>X</i>, kui
+        <br>
+        <i>f(-x) = f(x)</i>, iga <i>x ∈ X</i> korral.
+        <br>
+        <img src="Capture6.PNG" alt="I" />
         <br>
         <br>
-        <b>Eksponentfunktsioon</b> on <b>y = a<sup>x</sup></b>, kus
-        <b>a > 0 ja a ≠ 1</b>. Funktsiooni <b>y = e<sup>x</sup></b>korral räägitakse eksponentsiaalsest
-        kasvust ja <b>y = e<sup>-x</sup></b> korral eksponentsiaalsest langusest.
+        Funktsiooni <i>y = f(x)</i> nimetatakse <b>paarituks funktsiooniks</b>, kui
         <br>
+        <i>f(-x) = -f(x)</i>, iga <i>x ∈ X</i> korral.
         <br>
-        <b>Logaritmfunktsioon</b>, Positiivse arvu <b>x</b> logaritmiks alusel <b>a (a > 0, a ≠ 1)</b> nimetatakse
-        arvu <b>c</b>, millega alust <b>a</b> astendades saadakse arv <b>x</b>, s.t. <b>log<sub>a</sub> x = c ⇔ a c = x</b>. 
-        Logaritm- ja eksponentfunktsioon on teineteise pöördfunktsioonid.
+        <img src="Capture7.PNG" alt="I" />   
+        <div class="tekst" id="3">
+tatakse <b>üksüheseks funktsiooniks</b>, kui
+          iga <i>x<sub>1</sub>, x<sub>2</sub> ∈ X , x1 ̸= x2</i>, korral ka funktsiooni väärtused on erinevad          Funktsiooni f : X → Y nime
+          hulgas <i>Y</i>, s.t
+          <br>
+          <i>f(x1) ̸= f(x2).</i>
+          <br>
+          <img src="Capture8.PNG" alt="I" />
+
+
+        </div>
+        <div class="tekst" id="4">
+          Funktsioonide <i>f</i> ja <i>g</i> <b>liitfunktsioo,niks</b> ehk kompositsiooniks nimetatakse funktsiooni <i>h : X → Z</i>, mis defineeritakse võrdusega
+          <br>
+          <i>h(x) = g( f(x) ), x ∈ X</i>
+          Kasutatakse kirjutisi <i>h = gf</i> või <i>h = g ◦ f</i>
+          <br>
+          <br>
+          Vaatleme funktsioone
+          <i>f : R → R, f(x) = x + 1</i>
+          <br>
+          <i>g : R → R, g(x) = x<sup>2</sup></i>
+          <br>
+          <br>
+          Siis saame moodustada liitfunktsioonid
+          <br>
+          <i>(gf)(x) = g(f(x)) = (x + 1)<sup>2</sup> = x<sup>2</sup> + 2x + 1</i>
+          <br>
+          <i>(fg)(x) = f(g(x)) = g(x) + 1 = x<sup>2</sup> + 1</i>
+        </div>
+        <div class="tekst" id="5">
+          Üksühese vastavuse <i>f : X → Y</i> <b>pöördfunktsioon</b> <i>f<sup>-1</sup> 
+            : Y → X</i> määratakse võrdusega
+          <br>
+          <i>f<sup>-1</sup>(y) = x</i>
+          <br>
+          kus <i>f(x) = y</i> iga <i>x ∈ X</i> korral.
+        </div>
+        <div class="tekst" id="6">
+          <b>Põhiliste elementaarfunktsioonide</b> all mõistetakse järgmisi funktsioone:<br>
+          1. konstantne funktsioon <i>y = c</i><br>
+          2. astmefunktsioon <i>y = x<sup>a</sup></i><br>
+          3. eksponentfunktsioon <i>y = a<sup>x</sup>, (a > 0, a ̸= 1)</i><br>
+          4. logaritmfunktsioon <i>y = log<sub>a</sub>x,(a > 0, a ̸= 1)</i><br>
+          5. trigonomeetrilised funktsioonid
+          <i>y = sin x, y = cos x, y = tan x, y = cot x</i><br>
+          6. arkusfunktsioonid
+          <i>y = arcsin x, y = arccos x, y = arctan x, y = arccot x</i>
+          <br>
+          Konstantne funktsioon
+          <img src="Capture9.PNG" alt="I" />
+          <br>
+          astmefunktsioon
+          <img src="Capture10.PNG" alt="I" />
+          <br>
+          Eksponent- ja logaritmfunktsioon
+          <img src="Capture11.PNG" alt="I" />
+          <br>
+          Trigonomeetrilised funktsioonid
+          <img src="Capture12.PNG" alt="I" />
+          <br>
+          arkusfunktsioonid
+          <img src="Capture13.PNG" alt="I" />
+          
+
+        </div>
       </div>
-      <div class="tekst" id="3">
-        Hulga <b>X ⊂ R</b> <b>kuhjumispunktiks</b> nimetatakse punkti <b>a ∈ R</b>, kui punkti <b>a</b> iga ümbrus 
-        (vahemikud <b>(a −δ, a + δ)</b>, kus <b>δ > 0</b>) sisaldab vähemalt ühte temast erinevat hulga <b>X</b> punkti.
-        <br>
-        <br>
-        Olgu <b>a</b> funktsiooni <b>f</b> määramispiirkonna <b>X</b> <b>kuhjumispunkt</b>. Reaalarvu <b>A</b> nimetatakse funktsiooni <b>f</b> piirväärtuseks punktis <b>a</b> 
-        ja kirjutatakse <b>\lim\limits_x→a f(x) = A</b>,
-        kui punktile <b>a</b> piisavalt lähedastes määramispiirkonna <b>X</b> punktides <b>x</b> (välja arvatud, võib-olla, punktis <b>a</b>eneses) 
-        erinevad vastavad funktsiooni väärtused <b>v</b> arvust <b>A</b> kui tahes vähe.
-        <br>
-        <br>
-        <picture>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Tamasol_SVG.svg/300px-Tamasol_SVG.svg.png">
-        </picture>
-      </div>
-      <div class="tekst" id="4">
-        Vaatleme reaalmuutuja funktsioone <b>y = f(x)</b>, <b>x ∈ X ⊂ R</b>. Olgu <b>a ∈ X</b>.
-        Funktsiooni <b>f</b> nimetatakse pidevaks punktis <b>a</b>, kui <b>limx→a f(x) = f(a)</b>
-        <br>
-        <br>
-        Selleks, et funktsioon oleks pidev punktis <b>a</b>, peavad olema täidetud kõik järgmised kolm tingimust:<br>
-          1. funktsioonil on olemas väärtus <b>f(a)</b>;<br> 
-          2. funktsioonil on olemas piirväärtus <b>lim f(x)</b> protsessis <b>x → a</b>;<br>
-          3. <b>\lim\limits_x→a f(x) = f(a)</b>. Kui funktsioon <b>f</b> ei ole pidev punktis <b>a</b>, kuid on määratud tema ümbruses, siis öeldakse, et funktsioon
-          <b>f</b> on katkev punktis <b>a</b> (punkti <b>a</b> nimetatakse funktsiooni <b>f</b> katkevuspunktiks). Katkevuspunktist <b>a</b> räägitakse ka siis, kui funktsioon <b>f</b> ei ole määratud punktis <b>a</b>, kuid eksisteerib <b>limx→a f(x)</b>.
-        <br>
-        <br>
-        <picture>
-          <img src="data:image/png;base64,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">
-        </picture>
-        <br>
-        <br>
-        Kõik elementaarfunktsioonid on pidevad oma määramispiirkonnas
-      </div>
-      <div class="tekst" id="5">
-        Olgu antud funktsioon <b>f: X → R</b>, <b>f: X → R</b>. Anname argumendile <b>a ∈ X</b> muudu <b>∆x</b> nii, et <b>a + ∆x ∈ X</b>,
-        vastav funktsiooni muut olgu <b>∆f = f(a + ∆x) - f(a)</b>. Kui eksisteerib lõplik piirväärtus
-        siis seda piirväärtust nimetatakse funktsiooni <b>f</b> tuletiseks punktis <b>a</b> ja tähistatakse <b>f'(a)</b>.
-        <br>
-        <br>
-        Teoreem liitfunktsiooni diferentseerimisest. Kui <b>f : X → R</b> on diferentseeruv punktis <b>x ∈ X</b>, 
-        <b>f(X) ⊂ Y</b> ja <b>g : Y → R</b> on diferentseeruv punktis <b>y = f(x)</b>, siis <b>h = gf : X → R</b> on diferentseeruv punktis <b>x</b> ja <b>h'(x) = g'(f(x))f'(x)</b>
-        <br>
-        <br>
-        Logaritmilise diferentseerimise võte on vältimatu <b>u(x)<sup>v(x)</sup></b> tüüpi funktsioonide korral, kuid see on abiks ka siis, kui <b>f</b> sisaldab palju korrutisi ja jagatisi.<br>
-          1. kirjutame: <b>|y| = |f(x)|</b><br>
-          2. Võtame logaritmi võrrandi mõlemast poolest: <b>ln|y| = ln|f(x)|</b>
-          3. Võtame tuletise: <b>1/y y' = (ln|f(x)|)'</b>
-          4. Saadud seosest avaldame <b>y': y' = y(ln|f(x)|)''</b>
-      </div>
-      <div class="tekst" id="6">
-        Olgu antud punktis <B>x</B> diferentseeruv funktsioon <b>f</b>. Anname argumendile <b>x</b> muudu <b>∆x</b>. 
-        Korrutist <b>f'(x)∆x</b> nimetatakse funktsiooni <b>f</b> diferentsiaaliks punktis <b>x</b>. 
-        Tähistame <b>dy</b> või <b>df(x)</b>, seega <b>dy = f'(x)∆x</b> ehk <b>dy = f'(x)dx</b>.
-        <br>
-        <br>
-        Kui <b>∆x</b> on küllalt väike, siis võime funktsiooni <b>f</b> muudu <b>∆f</b> asemel leida funktsiooni <b>f</b> diferentsiaali <b>df</b>,
-        <b>∆f ≈ df</b> ehk <b>f(x + ∆x) - f(x) ≈ f'(x)∆x</b>.
-        <br>
-        <br>
-        Kui <b>∆x</b> on küllalt väike, siis <b>f(x + ∆x) ≈ f(x) + f'(x)∆x</b> kaudu saab funktsiooni väärtuse ligikaudselt kätte.
-      </div>
-      <div class="tekst" id="7">
-        Öeldakse, et funktsioonil <b>f : X → R</b>, <b>X ⊂ R</b>, on punktis (kohal) <b>a ∈ X</b> lokaalne maksimum, 
-        kui leidub selle punkti ümbrus <b>(a - δ, a + δ)</b>, <b>δ > 0</b>, nii et
-        <b>f(x) ≤ f(a)</b>, iga <b>x ∈ X ⋂ (a - δ, a + δ)</b> korral.
-        Öeldakse, et funktsioonil <b>f</b> on punktis (kohal) <b>a</b> lokaalne miinimum, kui leidub selle punkti ümbrus <b>(a - δ, a + δ), δ > 0</b>, nii et <b>f(x) ≥ f(a)</b>, iga <b>x ∈ X ⋂</b> <b>(a - δ, a + δ)</b> korral.
-        <br>
-        <br>
-        Funktsiooni <b>f</b> määramispiirkonna punkte, kus <b>f'(x) = 0</b> ja punkte, 
-        kus funktsioon <b>f</b> ei ole diferentseeruv, nimetatakse funktsiooni <b>f</b> kriitilisteks punktideks. 
-        Punkte <b>c</b>, kus <b>f'(c) = 0</b>, nimetatakse statsionaarseteks punktideks.
-        <br>
-        <br>
-        Olgu funktsioon <b>f</b> kaks korda diferentseeruv punktis <b>c</b>. 
-        Siis funktsioonil <b>f</b> on argumendi väärtusel <b>c</b> lokaalne maksimum, 
-        kui<b> f'(c) = 0</b> ja <b>f''(c) < 0</b>, funktsioonil <b>f</b> on argumendi väärtusel <b>c</b> lokaalne miinimum, 
-        kui <b>f'(c) = 0</b> ja <b>f''(c) > 0</b>.
-        <br>
-        <br>
-        Funktsiooni <b>globaalsed ekstreemumid</b> on funktsiooni suurim ja vähim väärtus mingis piirkonnas. 
-        Globaalsete ekstreemumite leidmine:<br>
-          1. Leiame kõik lokaalsed ekstreemumid.<br>
-          2. Arvutame funktsiooni väärtused piirkonna otspunktides (kui tegemist on lõiguga).<br>
-          3. Saadud funktsiooni väärtustest suurim on globaalne maksimum ja väikseim on globaalne miinimum.
-      </div>
-      <div class="tekst" id="8">
-        Joone puutujaks punktis <b>A</b> nimetatakse sirget, mis on lõikaja <b>AB</b> piirseisuks, 
-        kui punkt <b>B</b> läheneb punktile <b>A</b> mööda joont <b>y = f(x)</b>.
-        Funktsiooni <b>f</b> tuletis <b>f'(x<sub>0</sub>)</b> on selle joone puutuja tõus punktis <b>(x<sub>0</sub>, f(x<sub>0</sub>))</b> ja puutuja võrrand
-        avaldub järgmiselt: <b>y = f(x<sub>0</sub>) + f'(x<sub>0</sub>)(x - x<sub>0</sub>)</b>.
-        <br>
-        <br>
-        Joone <b>y = f(x)</b> normaaliks (ehk ristsirgeks) punktis <b>(x<sub>0</sub>, f(x<sub>0</sub>))</b> nimetatakse sirget, 
-        mis ristub sedapunkti läbiva puutujaga.
-        <br>
-        <br>
-        Olgu funktsioon <b>f</b> diferentseeruv vahemikus <b>(a, b)</b>. 
-        Kui <b>f'(x) > 0</b> iga argumendi väärtuse <b>x ∈ (a, b)</b> korral, siis funktsioon <b>f</b> on kasvav selles vahemikus, 
-        ja kui <b>f'(x) < 0</b> iga argumendi väärtuse <b>x ∈ (a, b)</b> korral, siis funktsioon <b>f</b> on kahanev selles vahemikus.
-        <br>
-        <br>
-        Funktsiooni <b>f : (a, b) → R</b> nimetatakse <b>kumeraks</b> vahemikus <b>(a, b)</b>, 
-        kui igas punktis <b>x ∈ (a, b)</b> funktsiooni graafiku puutuja asub ülalpool graafikut
-        <br>
-        <br>
-        Funktsiooni <b>f : (a, b) → R</b> nimetatakse <b>nõgusaks</b> vahemikus <b>(a, b)</b>, 
-        kui igas punktis <b>x ∈ (a, b)</b> funktsiooni graafiku puutuja asub allpool graafikut.
-        <br>
-        <br>
-        Olgu funktsioon <b>f</b> kaks korda diferentseeruv vahemiks <b>(a, b)</b>. 
-        Kui <b>f''(x) < 0</b> iga argumendi <b>x ∈ (a, b)</b> korral, siis <b>f</b> on kumer selles vahemikus. 
-        Kui <b>f''(x) > 0</b> iga argumendi <b>x ∈ (a, b)</b> korral, siis <b>f</b> on nõgus selles vahemikus.
-        <br>
-        <br>
-        Olgu funktsioon <b>f</b> diferentseeruv vähemalt vahemikes <b>(a, c)</b> ja <b>(c, b)</b> ning pidev punktis <b>c</b>. 
-        Kui funktsioon <b>f</b> on kumer vahemikus <b>(a, c)</b> ja nõgus vahemikus <b>(c, b)</b> (või nõgus vahemikus <b>(a, c)</b> ja kumer vahemikus <b>(c, b)</b>), siis punkti <b>c</b> nimetatakse käänupunktiks.
-      </div>
+
     </div>
     <script src="nupud.js"></script>
   </body>

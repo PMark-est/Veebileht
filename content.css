@@ -9,6 +9,7 @@
   border: transparent solid 3px;
   border-radius: 3px;
   padding: 0.7rem 3vw;
+  width: 26rem;
   animation: fadeInLReverse 0.5s cubic-bezier(0.65, -0.18, 0.18, 0.88);
 }
 .sisuNupud .btn:hover,
@@ -19,10 +20,12 @@
   animation: fadeInL 0.5s cubic-bezier(0.65, -0.18, 0.18, 0.88);
   transform: translate3d(10%, 0, 0);
 }
+.sisuTekst {
+  display: none;
+}
 .tekst {
-  margin-top: 6%;
-  margin-left: 35%;
-  margin-right: 4%;
+  margin: 6% 4% 0 35%;
+  padding-bottom: 2.5rem;
   font-size: 1.5vw;
   position: absolute;
   visibility: hidden;
