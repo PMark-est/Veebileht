@@ -12,11 +12,13 @@
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
     ></script>
-    <title>Maatriksid</title>
+    <title>MafHelp/Maatriksid</title>
   </head>
   <body>
     <div class="navbar">
-      <h1>MafHelp</h1>
+      <h1>
+        <a href="Index.html"> MafHelp </a>
+      </h1>
       <div class="navDB">
         <div class="navB">
           <button class="navTeema">Vektorid & tasandid</button>
@@ -49,21 +51,31 @@
         <div class="navB">
           <button class="navTeema">Funktsioonid</button>
           <div>
-            <button class="navAlaTeema">Funktsioonid</button>
-            <button class="navAlaTeema">Piirväärtus & pidevus</button>
-            <button class="navAlaTeema">Tuletis & Diferentsiaal</button>
-            <button class="navAlaTeema">Funktsiooni uurimine</button>
+            <button
+              class="navAlaTeema"
+              class="navAlaTeema"
+              onclick="window.location.href='Funktsioonid.html'"
+            >
+              Funktsioonid
+            </button>
+            <button
+              class="navAlaTeema"
+              class="navAlaTeema"
+              onclick="window.location.href='Piirv22rtus.html'"
+            >
+              Piirväärtus & pidevus
+            </button>
           </div>
         </div>
         <div class="navB">
           <button class="navTeema">Integraal</button>
           <div>
-            <button class="navAlaTeema">Algfunktsioon</button>
-            <button class="navAlaTeema">Diferentsiaal-võrrandid</button>
-            <button class="navAlaTeema">Pindala</button>
-            <button class="navAlaTeema">Määratud integraal</button>
-            <button class="navAlaTeema">Rakendused</button>
-            <button class="navAlaTeema">Päratud integraalid</button>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Integraal1.html'"
+            >
+              Algfunktsioon ja määramata integraal
+            </button>
           </div>
         </div>
         <div class="navB">
@@ -184,7 +196,9 @@
         <br />
         \((A+B)+C=A+(B+C)\)
         <br />
+        <br />
         \(A+B=B+A\)
+        <br />
         <br />
         \(A+O=A\)
       </div>
@@ -213,8 +227,8 @@
         <br />
         <br />
         Olgu $$A = \begin{pmatrix} 3 & -5 & 8 \\ 2 & 9 & 0 \end{pmatrix} $$ Siis
-        näiteks \(1.5\times A\) oleks $$1.5A = \begin{pmatrix} 1.5\times 3 &
-        1.5\times -5 & 1.5\times 8 \\ 1.5\times 2 & 1.5\times 9 & 1.5\times 0
+        näiteks \(1.5\cdot A\) oleks $$1.5A = \begin{pmatrix} 1.5\cdot 3 &
+        1.5\cdot -5 & 1.5\cdot 8 \\ 1.5\cdot 2 & 1.5\cdot 9 & 1.5\cdot 0
         \end{pmatrix}$$
         <br />
         Skalaariga korrutamisel kehtib järgmine omadus:
@@ -245,7 +259,9 @@
         <br />
         \((A^T)^T = A\)
         <br />
+        <br />
         \((A+B)^T = A^T + B^T\)
+        <br />
         <br />
         \((\lambda A)^T = \lambda A^T\)
       </div>
@@ -259,48 +275,102 @@
         a_{in}b_{jn},$$ kus \(i=1,...,m\) ja \(j=1,...,p\), A on \(m\times n\)
         maatriks ja B on \(n\times p\) maatriks. Olgu $$A = \begin{pmatrix} 3 &
         7 & 2 \\ 5 & 9 & 11 \end{pmatrix} \text{ ja } B = \begin{pmatrix} -5 \\
-        2 \\ 3\end{pmatrix}.$$ Korrutis AB oleks $$ AB = \begin{pmatrix} 3\times
-        -5 + 7\times 2 + 2\times 3 \\ 5\times -5 + 9\times 2 + 11\times 3
+        2 \\ 3\end{pmatrix}.$$ Korrutis AB oleks $$ AB = \begin{pmatrix} 3\cdot
+        -5 + 7\cdot 2 + 2\cdot 3 \\ 5\cdot -5 + 9\cdot 2 + 11\cdot 3
         \end{pmatrix} $$ Üldjuhul \(AB \neq BA\)
+        <br />
+        <br />
+        Olgu maatriksid A,B,C ja nullmaatriks O selliste mõõtmetega, et oleksid
+        järgmised tehted võimalikud.
+        <br />
+        Maatriksite korrutamise omadused on järgmised:
+        <br />
+        <br />
+        \((AB)C = A(BC)\)
+        <br />
+        <br />
+        \((A + B)C = AB + AC)\)
+        <br />
+        <br />
+        \(\lambda (AB) = (\lambda A)B = A(\lambda B), \lambda \in \mathbb{R} \)
+        <br />
+        <br />
+        \((AB)^T = B^TA^T\)
+        <br />
+        <br />
+        \(AO = OA = A\)
       </div>
       <div class="tekst" id="10">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error
-        veritatis ut harum voluptatum ipsa labore debitis nisi, quis velit,
-        recusandae quo corporis deserunt saepe iure sed iusto molestias id
-        possimus ducimus. Accusantium unde totam quam quae, odit magnam facere
-        quos iusto molestias corporis ipsam molestiae sit dolorem magni
-        doloribus?
+        Ruutmaatriksi A <b>elemendile</b> \(a_{ij}\) vastavaks
+        <b>miinoriks</b> nimetatakse determinanti \(M_{ij}\), mis saadakse, kui
+        maatriksi A determinandis jätta välja elementi \(a_{ij}\) läbiv ja
+        veerg. Olgu $$A = \begin{pmatrix} 1 & 0 & 4 \\ -3 & 1 & -2 \\ 2 & -1 &
+        -1\end{pmatrix}$$ Maatriksi A miinor \(M_{23}\) oleks, siis $$M_{23} =
+        \begin{pmatrix} 1 & 0 \\ 2 & -1\end{pmatrix}$$ See on vaid üks
+        võimalikest A miinoritest $$\{M_{11},\ M_{12},\ M_{13},\ M_{21},\
+        M_{22},\ M_{23},\ M_{31},\ M_{32},\ M_{33}\}$$
       </div>
       <div class="tekst" id="11">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-        consequuntur omnis consectetur, repellat labore sunt minima dignissimos,
-        cum quam aperiam excepturi tenetur totam. Nisi, soluta.
-      </div>
-      <div class="tekst" id="12">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error
-        veritatis ut harum voluptatum ipsa labore debitis nisi, quis velit,
-        recusandae quo corporis deserunt saepe iure sed iusto molestias id
-        possimus ducimus. Accusantium unde totam quam quae, odit magnam facere
-        quos iusto molestias corporis ipsam molestiae sit dolorem magni
-        doloribus?
-      </div>
-      <div class="tekst" id="13">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-        consequuntur omnis consectetur, repellat labore sunt minima dignissimos,
-        cum quam aperiam excepturi tenetur totam. Nisi, soluta.
-      </div>
-      <div class="tekst" id="14">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti error
-        veritatis ut harum voluptatum ipsa labore debitis nisi, quis velit,
-        recusandae quo corporis deserunt saepe iure sed iusto molestias id
-        possimus ducimus. Accusantium unde totam quam quae, odit magnam facere
-        quos iusto molestias corporis ipsam molestiae sit dolorem magni
-        doloribus?
-      </div>
-      <div class="tekst" id="15">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-        consequuntur omnis consectetur, repellat labore sunt minima dignissimos,
-        cum quam aperiam excepturi tenetur totam. Nisi, soluta.
+        Esimest järku ruutmaatriksi A determinant \(|A|=a_{11}\).
+        <br />
+        <br />
+        Kõrgemat järku ruutmaatriksi \(A = (a_{ij})\)
+        <b>determinandiks</b> nimetatakse summat $$|A| =
+        \sum_{j=1}^{n}(-1)^{i+j}a_{ij}M_{ij}, \ \ \ i \in \{1,2,...,n\}, n\geq
+        2,$$ kus \(M_{ij}\) on elemendile \(a_{ij}\) vastav miinor ehk
+        (n-1)-järku determinant. Antud valemid kasutamist nimetatakse
+        <b>determinandi arendamiseks i-nda rea järgi</b>.
+        <br />
+        <br />
+        Determinandi väärtus ei muutu, kui maatriksi A determinanti arendad
+        mingi j-nda veeru järgi. Determinandi tähistusi: detA, det\((a_{ij})\),
+        \(D_A\).
+        <br />
+        <br />
+        Olgu antud determinant $$\begin{vmatrix} 13 & 17 & 4 \\ 2 & -1 & 0\\ 1 &
+        3 & 1\end{vmatrix}$$ Arendades seda determinanti üks kord 1. rea järgi
+        saame $$(-1)^{1+1}\cdot 13\cdot \begin{vmatrix} -1 & 0\\ 3 &
+        1\end{vmatrix} + (-1)^{1+2}\cdot 17\cdot \begin{vmatrix} 2 & 0\\ 1 &
+        1\end{vmatrix} + (-1)^{1+3}\cdot 4\cdot \begin{vmatrix} 2 & -1\\ 1 &
+        3\end{vmatrix}$$
+        <br />
+        <br />
+        Determinantidel kehtivad järgmised omadused:
+        <br />
+        <br />
+        \(|A| = |A^T|.\)
+        <br />
+        <br />
+        Kahe rea (või veeru) vahetamisel muutub determinandi märk vastupidiseks.
+        <br />
+        <br />
+        Kahe võrdse või võrdelise rea (või veeru) korral on determinandi väärtus
+        null.
+        <br />
+        <br />
+        Kui determinandi mingi rea (või veeru) kõik elemendid on nullid, siis
+        determinandi väärtus võrdub nullgia
+        <br />
+        <br />
+        \(\begin{vmatrix} a_{11} & ... & a_{1n} \\ ... & ... & ... \\ ka_{i1} &
+        ... & ka_{in} \\ ... & ... & ... \\ a_{1n} & ... & a_{nn}\end{vmatrix} =
+        k \begin{vmatrix} a_{11} & ... & a_{1n} \\ ... & ... & ... \\ a_{i1} &
+        ... & a_{in} \\ ... & ... & ... \\ a_{1n} & ... & a_{nn}\end{vmatrix} \)
+        <br />
+        <br />
+        \(\begin{vmatrix} a_1 + b_1 & a_2 + b_2 & a_3 + b_3 \\ c_1 & c_2 & c_3
+        \\ d_1 & d_2 & d_3 \end{vmatrix} = \begin{vmatrix} a_1 & a_2 & a_3 \\
+        c_1 & c_2 & c_3 \\ d_1 & d_2 & d_3 \end{vmatrix} + \begin{vmatrix} b_1 &
+        b_2 & b_3 \\ c_1 & c_2 & c_3 \\ d_1 & d_2 & d_3 \end{vmatrix}\)
+        <br />
+        <br />
+        Determinandi väärtus ei muutu, kui mingile reale (või veerule) liita
+        mistahes arvuga korrutatud teine rida (või veerg)
+        <br />
+        <br />
+        Kui A ja B on mõlemad \(m\times n\) maatriksid, siis
+        <br />
+        \(|AB| = |A||B|\)
       </div>
     </div>
     <script src="nupud.js"></script>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="content.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <title>MafHelp/Algfunktsioon</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <h1>
+        <a href="Index.html"> MafHelp </a>
+      </h1>
+      <div class="navDB">
+        <div class="navB">
+          <button class="navTeema">Vektorid & tasandid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Vektorid.html'"
+            >
+              Vektorid ruumis
+            </button>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Tasandid.html'"
+            >
+              Sirge & tasand ruumis
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Kompleksarvud</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Kompleks.html'"
+            >
+              Trigonomeetriline- & Algebraline & Eksponentkuju
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Funktsioonid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              class="navAlaTeema"
+              onclick="window.location.href='Funktsioonid.html'"
+            >
+              Funktsioonid
+            </button>
+            <button
+              class="navAlaTeema"
+              class="navAlaTeema"
+              onclick="window.location.href='Piirv22rtus.html'"
+            >
+              Piirväärtus & pidevus
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Integraal</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Integraal1.html'"
+            >
+              Algfunktsioon ja määramata integraal
+            </button>
+          </div>
+        </div>
+        <div class="navB">
+          <button class="navTeema">Maatriksid</button>
+          <div>
+            <button
+              class="navAlaTeema"
+              onclick="window.location.href='Maatriksid.html'"
+            >
+              Maatriksid & Determinandid
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sisuNupud">
+      <button type="button" class="btn" id="1" onClick="reply_click(this.id)">
+        Funktsiooni algfunktsioon
+      </button>
+      <button type="button" class="btn" id="2" onClick="reply_click(this.id)">
+        Määramata integraal
+      </button>
+      <button type="button" class="btn" id="3" onClick="reply_click(this.id)">
+        Elementaarfunktsioonid
+      </button>
+      <button type="button" class="btn" id="4" onClick="reply_click(this.id)">
+        Integreerimisreegel
+      </button>
+      <button type="button" class="btn" id="5" onClick="reply_click(this.id)">
+        Muutujavahetus
+      </button>
+      <button type="button" class="btn" id="6" onClick="reply_click(this.id)">
+        Ositi integreerimine
+      </button>
+      <button type="button" class="btn" id="7" onClick="reply_click(this.id)">
+        Liht-, liigmurd
+      </button>
+    </div>
+    <div class="sisuTekst">
+      <div class="tekst" id="1">
+        Funktsiooni F nimetatakse funktsiooni <i>f</i>
+        <b>algfunktsiooniks</b> vahemikus (a, b), kui $$F'(x) = f(x),$$ iga \(x
+        \in (a,b)\) korral.
+        <br />
+        <br />
+        Näiteks \(y= 4x^3\) üheks algfunktsiooniks sobib \(F(x)=x^4\), sest
+        \(F'(x)=y\).
+        <br />
+        <br />
+        Funktsiooni <i>f</i> kõik algfunktsioonid avalduvad kujul F + C, kus F
+        on funktsiooni <i>f</i> mingi algfunktsioon ja \(C \in \mathbb{R}\) on
+        suvaline konstant.
+      </div>
+      <div class="tekst" id="2">
+        Olgu F funktsiooni <i>f</i> mingi algfunktsioon. Funktsiooni
+        <i>f</i> kõikide algfunktsioonide üldavaldist F + C, kus \(C \in
+        \mathbb{R}\) on suvalise konstandi tähis, nimetatkase funktsiooni
+        <i>f</i> <b>määramata integraaliks</b>.
+        <br />
+        <br />
+        Kasutatakse kirjutist $$\int f(x)\, dx = F(x) + C$$
+        <br />
+        <br />
+        Integraali definitsioonist järelduvad järgmised omadused: $$(\int f(x)\,
+        dx)' = f(x)$$ $$d(\int f(x)\, dx) = f(x)dx$$ $$\int dF(x) = F(x)+C$$
+        <br />
+        <br />
+        <b
+          >Igal vahemikus (a, b) pideval funktsioonil on olemas algfunktsioon
+          selles vahemikus</b
+        >
+      </div>
+      <div class="tekst" id="3">
+        $$ \int c\, dx = cf(x)+C$$ $$\int x^a\, dx = \dfrac{x^{a+1}}{a+1}+C, \,
+        \, \, a\neq -1$$ $$\int \dfrac{1}{x}\, dx = ln|x|+C$$ $$\int a^x\, dx =
+        \dfrac{a^x}{ln\, a}+C$$ $$\int e^x\, dx = e^x+C$$ $$\int sin\, x\, dx =
+        -cos\, x+C$$ $$\int cos\, x\, dx = sin\, x+C$$ $$\int \dfrac{1}{cos^2\,
+        x}\, dx = tan\, x+C$$ $$\int \dfrac{1}{sin^2\, x}\, dx = -cot\, x+C$$
+        $$\int \dfrac{1}{\sqrt{1-sin^2\, x}}\, dx = arcsin\, x+C$$ $$\int
+        \dfrac{1}{\sqrt{1-sin^2\, x}}\, dx = -arccos\, x+C$$ $$\int
+        \dfrac{1}{1+x^2}\, dx = arctan\, x+C$$ $$\int \dfrac{1}{1+x^2}\, dx =
+        -acrcot\, x+C$$
+      </div>
+      <div class="tekst" id="4">
+        Kui on olemas integraalid \(\int f(x)\, dx\) ja \(\int g(x)\, dx\), siis
+        kõikide reaalarvude \(k,l \in \mathbb{R}\) korral on olemas integraal
+        \(\int (kf(x)+lg(x)\, dx\), kusjuures $$\int (kf(x)+lg(x)\, dx = k\int
+        f(x)\, dx\ + l\int g(x)\, dx$$
+        <br />
+        <br />
+        <b>TÕESTUS</b>
+        <br />
+        <br />
+        Eelduse järgi leiduvad algfunktsioonid F ja G, nii et F' = f ja G'= g.
+        <br />
+        Tuletise leidmiste omaduste põhjal $$(kF + lG)' = kF' + lG' = kf + lg.$$
+        Viimane ütlebki, et funktsioon \(fk + lg \) algfunktsiooniks on $$kF +
+        lG$$
+      </div>
+      <div class="tekst" id="5">
+        Kui \(\phi\) on diferentseeruv funktsioon muutumispiirkonnaga U ja
+        <i>f</i> on pidev funktsioon määramispiirkonnas U, siis kehtib
+        <b>muutujavahetuse valem</b>
+        $$\int f(\phi (x))\phi '(x)\, dx = \int (f(u)\, du$$
+        <br />
+        <br />
+        Olgu antud integraal $$\int x^2(4x^3+2)^2\, dx$$ Kui võtta \(u = 4x^3 +
+        2\), siis \(du = 12x^2dx\) ning saame uue integraali $$\int x^2u^2\,
+        \dfrac{du}{12x^2} = \int u^2\, \dfrac{du}{12} = \dfrac{u^3}{12\cdot
+        3}+C$$ Asendades x tagasi võrrandisse, saame
+        \(\dfrac{(4x^3+2)^3}{36}+C\)
+      </div>
+      <div class="tekst" id="6">
+        Olgu funktsioonid u ja v mingis intervallis X ja diferentseeruvad ja
+        eksisteerigu integraal $$\int u'(x)v(x)\, dx.$$ Siis eksisteerib ka
+        integraal $$\int u(x)v'(x)\, dx $$ ja kehtib võrdus $$\int u(x)v'(x)\,
+        dx = uv - \int u'(x)v(x)\, dx$$ Olgu antud integraal $$\int xe^x\, dx$$
+        Võtame, et \(u = x\) ja \(dv = e^x\).
+        <br />
+        Seega \(du = dx\) ja \(v = e^x\) (<b
+          >dv tuleb valida nii, et oskame seda integreerida</b
+        >).
+        <br />
+        Saame, et $$\int xe^x\, dx = xe^x - \int e^x\, dx = xe^x - e^x + C$$
+      </div>
+      <div class="tekst" id="7">
+        Kui polünoomi P(x) aste on väiksem polünoomi Q(x) astmest, siis
+        ratsionaalfunktsiooni \(\dfrac{P(x)}{Q(x)}\) nimetatakse
+        <b>lihtmurruks</b>, vastasel korral aga <b>liigmurruks</b>.
+      </div>
+    </div>
+    <script src="nupud.js"></script>
+  </body>
+</html>
