@@ -8,15 +8,15 @@ Autorid:
 
 # Karmo vastutused
 
-- Vektorid
-- Kompleksarvud
+- Vektorid 2 teemat
+- Kompleksarvud 1 teema
 
 # Karl vastutused
 
-- Funktsioonid
+- Funktsioonid 2 teemat
 
 # Marko v
 
-- Lehe üldine mulje
-- Maatriksid
-- Integraal
+- Koduleht
+- Maatriksid 1 teema
+- Integraal 1 teema
